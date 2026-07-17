@@ -55,7 +55,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **brand-guide** | Extract a measurable brand system (tokens + voice) from a site or logo |
 | **humanizer** | Strip AI tells from EN/KR prose + line-break fundamentals for display text |
 | **content-repurpose** | Threads ↔ LinkedIn rewriting in each platform's native grammar |
-| **image-gen** | Marketing images via **gpt-image-2 (default) / Nano Banana only, no fallback** — 3+ variants by default, ads always A/B |
+| **image-gen** | Marketing images via the **Higgsfield CLI (default model gpt-image-2)** — 3+ variants by default, ads always A/B |
 | **thumbnail-maker** | Video thumbnails — always a 4+ variant A/B set, text overlaid not baked, real-face references only |
 
 **Video**
@@ -93,10 +93,10 @@ Everything via environment variables — never write keys into files.
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | your CRM's key (the skill guides you) |
 | organic-social / paid-ads | `ZERNIO_API_KEY` |
-| image-gen / thumbnail-maker | `OPENAI_API_KEY` or `GEMINI_API_KEY` |
+| image-gen / thumbnail-maker | Higgsfield account (`higgsfield auth login`) |
 | cyrano (delivery) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-**Image policy (kit-wide):** allowed models are OpenAI gpt-image-2 (default) and Google Nano Banana — nothing else, no silent fallback; failures get reported. Performance visuals (ads, thumbnails) always ship as A/B variant sets.
+**Image policy (kit-wide):** all image/video generation goes through the Higgsfield CLI (default model gpt-image-2) — no silent fallback to other routes; failures get reported. Performance visuals (ads, thumbnails) always ship as A/B variant sets.
 
 ## Safety rules (all skills)
 

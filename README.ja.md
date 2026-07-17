@@ -55,7 +55,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **brand-guide** | サイトやロゴから測定可能なブランドシステム（トークン+ボイス）を抽出 |
 | **humanizer** | 英/韓テキストからAIっぽさを除去 + 表示テキストの改行の基本 |
 | **content-repurpose** | Threads ↔ LinkedIn を各プラットフォームのネイティブ文法で書き直し |
-| **image-gen** | マーケティング画像 — **gpt-image-2（デフォルト）/ Nano Banana のみ、フォールバック禁止** — 標準で3案以上、広告は必ずA/B |
+| **image-gen** | マーケティング画像 — **すべて Higgsfield CLI 経由（デフォルトモデル gpt-image-2）** — 標準で3案以上、広告は必ずA/B |
 | **thumbnail-maker** | 動画サムネイル — 常に4案以上のA/Bセット、文字は焼き込まずオーバーレイ、実在の顔写真のみ参照 |
 
 **動画**
@@ -93,10 +93,10 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 接続するCRMのキー（スキルが案内） |
 | organic-social / paid-ads | `ZERNIO_API_KEY` |
-| image-gen / thumbnail-maker | `OPENAI_API_KEY` または `GEMINI_API_KEY` |
+| image-gen / thumbnail-maker | Higgsfield アカウント（`higgsfield auth login`）|
 | cyrano（配信チャネル） | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-**画像ポリシー（キット共通）:** 許可モデルは OpenAI gpt-image-2（デフォルト）と Google Nano Banana の2つだけ — それ以外への無断フォールバック禁止、失敗は報告。成果系ビジュアル（広告・サムネイル）は常にA/Bバリアントセットで納品。
+**画像ポリシー（キット共通）:** 画像・動画生成はすべて Higgsfield CLI 経由（デフォルトモデル gpt-image-2）— 他ルートへの無断フォールバック禁止、失敗は報告。成果系ビジュアル（広告・サムネイル）は常にA/Bバリアントセットで納品。
 
 ## 安全ルール（全スキル共通）
 

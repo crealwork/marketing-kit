@@ -1,4 +1,4 @@
-"""Compose 3 YouTube thumbnails: gpt-image-2/Nano Banana API base + PIL Korean hook overlay."""
+"""Compose 3 YouTube thumbnails: AI base image (Higgsfield CLI — image-gen skill) + PIL Korean hook overlay."""
 import sys, json, re, urllib.request
 sys.stdout.reconfigure(encoding="utf-8")
 from PIL import Image, ImageDraw, ImageFont

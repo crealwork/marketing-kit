@@ -1,7 +1,7 @@
 {
   "name": "ai-marketing-kit",
-  "version": "1.6.0",
-  "description": "26 battle-tested marketing skills for AI agents: guided onboarding (DESIGN.md/BRAND-VOICE.md/CLAUDE.md setup), publish checklist, SEO + GEO (AI search) setup, GA4/GTM analytics, universal CRM connection, card news, slide decks, print design with QA loop and press-ready output, brand guide extraction, humanizer, content repurposing, image generation and video thumbnails (gpt-image-2/Nano Banana, A/B variants), YouTube editing + shorts, longform-to-content pipeline, ad videos (motion graphics + AI visuals), organic social automation + paid ads, Resend newsletters, cold email, lead magnets, pre-meeting research, Dan's marketing advice, YC-style validation, viral ideas, first-principles coaching.",
+  "version": "1.7.0",
+  "description": "26 battle-tested marketing skills for AI agents: guided onboarding (DESIGN.md/BRAND-VOICE.md/CLAUDE.md setup), publish checklist, SEO + GEO (AI search) setup, GA4/GTM analytics, universal CRM connection, card news, slide decks, print design with QA loop and press-ready output, brand guide extraction, humanizer, content repurposing, image generation and video thumbnails (Higgsfield CLI, A/B variants), YouTube editing + shorts, longform-to-content pipeline, ad videos (motion graphics + AI visuals), organic social automation + paid ads, Resend newsletters, cold email, lead magnets, pre-meeting research, Dan's marketing advice, YC-style validation, viral ideas, first-principles coaching.",
   "author": {
     "name": "Sundayable",
     "url": "https://www.sundayable.com"

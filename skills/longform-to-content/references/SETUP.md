@@ -52,13 +52,14 @@ Mechanics (all fonts): libass gets a STATIC bold file in `<work>/edit/assets/fon
 referenced with a RELATIVE fontsdir; PIL may use variable fonts with axis weights.
 VERIFY: 3s test burn renders glyphs (not boxes) at the target size.
 
-## 6. Image generation (thumbnail base images) — direct APIs only
-- ALLOWED MODELS (no others, no third-party wrappers): OpenAI **gpt-image-2**
-  (default; env `OPENAI_API_KEY`; edits endpoint for the real-face reference photo)
-  and Google **Nano Banana** (Gemini image model; env `GEMINI_API_KEY`; native
-  image-input editing). API snippets: the `image-gen` skill in this kit.
-- NO FALLBACK to any other model/service — on failure, report to the user.
-- gpt-image-2 notes: org must be verified; sizes 1024x1024 / 1536x1024 / 1024x1536.
+## 6. Image generation (thumbnail base images) — Higgsfield CLI only
+- ALL generation goes through the **Higgsfield CLI** (`npm i -g @higgsfield/cli`,
+  `higgsfield auth login`). Default model **gpt_image_2**; real-face reference via
+  `--image photo.png`. VERIFY BEFORE SPENDING: `higgsfield account status`
+  (account email + credits — wrong-account spend is unrecoverable).
+- Command pattern + download snippets: the `image-gen` skill in this kit.
+- NO FALLBACK to any other route/service — on failure, report to the user.
+- Windows: call via full path `%APPDATA%\npm\higgsfield.cmd`.
 - Background removal (cutouts for compositing): local `rembg` with the
   `birefnet-portrait` model (`pip install rembg`).
 

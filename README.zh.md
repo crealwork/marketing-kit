@@ -55,7 +55,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **brand-guide** | 从网站或 Logo 提取可量化的品牌系统（令牌 + 语调） |
 | **humanizer** | 去除中英文 AI 痕迹 + 展示文本的换行基本功 |
 | **content-repurpose** | Threads ↔ LinkedIn 按各平台原生语法重写 |
-| **image-gen** | 营销图像 — **仅限 gpt-image-2（默认）/ Nano Banana，无回退** — 默认 3+ 变体，广告必须 A/B |
+| **image-gen** | 营销图像 — **统一经 Higgsfield CLI（默认模型 gpt-image-2）** — 默认 3+ 变体，广告必须 A/B |
 | **thumbnail-maker** | 视频缩略图 — 始终 4+ 变体 A/B 组，文字叠加而非烘焙，仅用真实人脸参考 |
 
 **视频**
@@ -93,10 +93,10 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 所连 CRM 的密钥（技能会引导你） |
 | organic-social / paid-ads | `ZERNIO_API_KEY` |
-| image-gen / thumbnail-maker | `OPENAI_API_KEY` 或 `GEMINI_API_KEY` |
+| image-gen / thumbnail-maker | Higgsfield 账户（`higgsfield auth login`）|
 | cyrano（送达渠道） | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-**图像策略（全套件通用）：** 允许的模型只有 OpenAI gpt-image-2（默认）和 Google Nano Banana — 不允许其他模型，不允许静默回退；失败必须上报。效果类视觉（广告、缩略图）一律以 A/B 变体组交付。
+**图像策略（全套件通用）：** 所有图像/视频生成统一通过 Higgsfield CLI（默认模型 gpt-image-2）— 不允许静默切换其他途径；失败必须上报。效果类视觉（广告、缩略图）一律以 A/B 变体组交付。
 
 ## 安全规则（所有技能）
 

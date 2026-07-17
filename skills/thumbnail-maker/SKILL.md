@@ -1,13 +1,14 @@
 ---
 name: thumbnail-maker
-description: Use when making video thumbnails — YouTube longform (1280×720), Shorts/Reels covers (1080×1920) — always as a multi-variant set for A/B testing. Image generation only via gpt-image-2 (default) or Nano Banana, no other models. Triggers: "썸네일 만들어줘", "썸네일 뽑아줘", "유튜브 썸네일", "커버 이미지", "make thumbnails", "CTR 썸네일". 일반 마케팅 이미지는 image-gen.
+description: Use when making video thumbnails — YouTube longform (1280×720), Shorts/Reels covers (1080×1920) — always as a multi-variant set for A/B testing. Image generation via the Higgsfield CLI (default model gpt_image_2). Triggers: "썸네일 만들어줘", "썸네일 뽑아줘", "유튜브 썸네일", "커버 이미지", "make thumbnails", "CTR 썸네일". 일반 마케팅 이미지는 image-gen.
 ---
 
 # Thumbnail Maker
 
 썸네일은 CTR 장치다 — 예쁜 이미지가 아니라 **클릭 근거**. 항상 **변형 세트
-(기본 4개)** 로 뽑아 A/B 테스트에 넘긴다. 모델 정책은 image-gen 스킬과 동일:
-**gpt-image-2 기본, Nano Banana 선택, 그 외 폴백 금지** (실패 = 보고).
+(기본 4개)** 로 뽑아 A/B 테스트에 넘긴다. 생성 정책은 image-gen 스킬과 동일:
+**모든 생성은 Higgsfield CLI 경유, 기본 모델 gpt_image_2** — 다른 경로로
+말없이 전환 금지 (실패 = 보고).
 
 ## Hard rules
 
@@ -19,12 +20,13 @@ description: Use when making video thumbnails — YouTube longform (1280×720), 
 3. **텍스트는 굽지 않는다** — 배경/인물은 이미지 모델로, **문구는 HTML/PIL
    오버레이**로 얹는다 (이미지 모델의 글자 렌더는 신뢰 불가). 통생성은 유저가
    원할 때만, 그 경우 글자 단위 READ 검증 필수.
-4. **실제 얼굴 사용**: 인물 썸네일은 유저가 준 실제 사진 기반 (Nano Banana 이미지
-   입력 편집 or gpt-image-2 edits) — 얼굴 각도/표정 변형은 OK, 얼굴을 지어내는
+4. **실제 얼굴 사용**: 인물 썸네일은 유저가 준 실제 사진 기반 (Higgsfield
+   `--image` 레퍼런스 편집) — 얼굴 각도/표정 변형은 OK, 얼굴을 지어내는
    것은 금지.
 5. 검증은 눈으로: 각 변형을 **모바일 스케일(약 320px 폭)로 축소해 READ** —
    문구 읽히고 표정 보이면 합격. 데스크톱 크기로만 보고 통과시키지 않는다.
-6. 키: `OPENAI_API_KEY` / `GEMINI_API_KEY`. API 스니펫은 image-gen 스킬 A/B절.
+6. 셋업/명령 스니펫은 image-gen 스킬 — `higgsfield account status`로 계정·크레딧
+   확인 후 생성.
 
 ## 규격
 

@@ -43,4 +43,4 @@ pass/fail table before touching the recording.
 | shell + ffmpeg/Python execution | everything | cannot run this skill |
 | image viewing (multimodal input) | all visual self-tests, thumbnail checks | fallback per rule 5 above — user becomes the eyes; slower but valid |
 | long-running processes (5–15 min renders) | render + burn passes | run steps sequentially with progress prints; no step needs >20 min |
-| internet | tool installs, Zernio/gpt-image-2/Nano Banana API APIs | offline: edit-only mode, manual publish handoff |
+| internet | tool installs, Zernio API, Higgsfield CLI (image gen) | offline: edit-only mode, manual publish handoff |

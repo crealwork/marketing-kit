@@ -68,15 +68,12 @@ runs harmlessly fall back — check visually before chasing.)
 - Rounded card: `MSO_SHAPE.ROUNDED_RECTANGLE` + `shape.adjustments[0] = 0.1`.
 - Line breaks: use separate paragraphs, not `\n` inside a run.
 
-## Image generation fallback
+## Image generation
 
-`gpt-image-2` = OpenAI `/v1/images/generations`, `OPENAI_API_KEY` from the
-environment — prefer it when an image must contain
-accurate text/wordmarks. It can be blocked by `billing_hard_limit_reached`
-(HTTP 400).
-Fall back to Gemini `gemini-3.1-flash-image-preview` (GOOGLE_AI_API_KEY) —
-equivalent quality for decorative/no-text spot illustrations; keep gpt-image-2
-for anything containing wordmarks/text.
+All spot-illustration generation goes through the **Higgsfield CLI** (default
+model `gpt_image_2` — strong at accurate text/wordmarks). Setup, account check
+(`higgsfield account status` BEFORE spending) and command pattern: the
+`image-gen` skill in this kit. No silent fallback to other routes.
 
 **Spot-illustration polish (before embedding on white slides):** AI images come
 back with near-white (not pure white) backgrounds that show as gray boxes.

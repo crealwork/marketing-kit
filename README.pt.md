@@ -55,7 +55,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **brand-guide** | Extrai um sistema de marca mensurável (tokens + voz) de um site ou logo |
 | **humanizer** | Remove marcas de IA do texto (EN/KR) + fundamentos de quebra de linha |
 | **content-repurpose** | Threads ↔ LinkedIn reescrito na gramática nativa de cada plataforma |
-| **image-gen** | Imagens de marketing — **somente gpt-image-2 (padrão) / Nano Banana, sem fallback** — 3+ variações por padrão, anúncios sempre em A/B |
+| **image-gen** | Imagens de marketing — **tudo via Higgsfield CLI (modelo padrão gpt-image-2)** — 3+ variações por padrão, anúncios sempre em A/B |
 | **thumbnail-maker** | Thumbnails de vídeo — sempre um set A/B com 4+ variações, texto sobreposto (não gerado), apenas rostos reais como referência |
 
 **Vídeo**
@@ -93,10 +93,10 @@ Tudo via variáveis de ambiente — nunca escreva chaves em arquivos.
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | a chave do seu CRM (a skill orienta) |
 | organic-social / paid-ads | `ZERNIO_API_KEY` |
-| image-gen / thumbnail-maker | `OPENAI_API_KEY` ou `GEMINI_API_KEY` |
+| image-gen / thumbnail-maker | Conta Higgsfield (`higgsfield auth login`) |
 | cyrano (canal de entrega) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-**Política de imagens (todo o kit):** os únicos modelos permitidos são OpenAI gpt-image-2 (padrão) e Google Nano Banana — nada além, sem fallback silencioso; falhas são reportadas. Visuais de performance (anúncios, thumbnails) sempre saem como sets de variações A/B.
+**Política de imagens (todo o kit):** toda geração de imagem/vídeo passa pelo Higgsfield CLI (modelo padrão gpt-image-2) — sem fallback silencioso para outras rotas; falhas são reportadas. Visuais de performance (anúncios, thumbnails) sempre saem como sets de variações A/B.
 
 ## Regras de segurança (todas as skills)
 

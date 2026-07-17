@@ -6,7 +6,7 @@ description: Use when making a short paid-ad or promo VIDEO (15–60s) that comb
 # Ad Video
 
 모션그래픽 + AI 생성 비주얼로 **광고 영상**을 만든다. 렌더 엔진은 HyperFrames
-(HTML→video), 비주얼 소스는 image-gen 정책(gpt-image-2/Nano Banana), 성과 원칙은
+(HTML→video), 비주얼 소스는 image-gen 정책(Higgsfield CLI), 성과 원칙은
 **A/B 변형 — 영상도 1개만 뽑으면 학습 없는 지출이다.**
 
 **전제**: `hyperframes` 스킬 설치 필수 (없으면 `npx skills add heygen-com/hyperframes --all`).
@@ -26,9 +26,9 @@ paid-ads 게이트에서** — 이 스킬은 제작만.
 라우팅 후 `npx hyperframes skills update <workflow>` — 라우터 지시대로.
 
 **3. AI 비주얼 (image-gen 정책 그대로).**
-- 장면용 이미지가 필요하면 image-gen 스킬로: **gpt-image-2 기본 / Nano Banana,
-  폴백 금지**, 생성물 READ 검증. 텍스트는 이미지에 굽지 않는다 — 카피는 전부
-  HyperFrames 타이포 레이어로.
+- 장면용 이미지가 필요하면 image-gen 스킬로: **Higgsfield CLI 경유, 기본
+  gpt_image_2, 폴백 금지**, 생성물 READ 검증. 텍스트는 이미지에 굽지 않는다 —
+  카피는 전부 HyperFrames 타이포 레이어로.
 - 제품 누끼: `rembg` + `birefnet-portrait`(인물) — 로컬, 무료.
 - BGM/SFX/아이콘은 media-use 스킬로 해결 (로열티프리만).
 

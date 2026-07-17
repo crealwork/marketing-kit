@@ -18,9 +18,9 @@ guides. These are requirements, not suggestions:
 
 ## Generation
 
-Full one-shot generation via **gpt-image-2 edits endpoint** (or Nano Banana image
-input) WITH the person's real photo as reference — direct API only, no other
-models, no fallback (SETUP.md §6; snippets in the `image-gen` skill). NEVER
+Full one-shot generation via the **Higgsfield CLI** (`generate create gpt_image_2
+--image photo.png`) WITH the person's real photo as reference — no other route,
+no fallback (SETUP.md §6; snippets in the `image-gen` skill). NEVER
 AI-generate a face from nothing; NEVER use an illustration-only thumbnail for
 YouTube. **Always produce 3+ variants** (expression × composition × background
 axes) so the user can A/B them with YouTube Test & compare.

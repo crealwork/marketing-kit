@@ -55,7 +55,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **brand-guide** | 사이트/로고에서 측정 가능한 브랜드 시스템(토큰+보이스) 추출 |
 | **humanizer** | 영/한 AI 티 제거 + 표시 텍스트 줄나눔 기본기 |
 | **content-repurpose** | Threads ↔ LinkedIn — 각 플랫폼 네이티브 문법으로 재구성 |
-| **image-gen** | 마케팅 이미지 — **gpt-image-2(기본)/Nano Banana만, no fallback** — 변형 3개+ 기본, 광고는 A/B 필수 |
+| **image-gen** | 마케팅 이미지 — **힉스필드 CLI 경유(기본 모델 gpt-image-2)** — 변형 3개+ 기본, 광고는 A/B 필수 |
 | **thumbnail-maker** | 영상 썸네일 — 항상 4개+ A/B 세트, 문구는 오버레이, 실제 얼굴 사진 기반만 |
 
 **영상**
@@ -93,10 +93,10 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
 | organic-social / paid-ads | `ZERNIO_API_KEY` |
-| image-gen / thumbnail-maker | `OPENAI_API_KEY` 또는 `GEMINI_API_KEY` |
+| image-gen / thumbnail-maker | 힉스필드 계정 (`higgsfield auth login`) |
 | cyrano (전달 채널) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-**이미지 정책 (킷 공통):** 허용 모델 = gpt-image-2(기본) + Nano Banana 둘뿐 — 다른 모델 폴백 금지, 실패는 보고. 광고·썸네일 등 성과형 비주얼은 항상 A/B 변형 세트.
+**이미지 정책 (킷 공통):** 이미지·영상 생성은 전부 힉스필드 CLI 경유(기본 모델 gpt-image-2) — 다른 경로 폴백 금지, 실패는 보고. 광고·썸네일 등 성과형 비주얼은 항상 A/B 변형 세트.
 
 ## 안전 룰 (전 스킬 공통)
 

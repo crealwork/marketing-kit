@@ -85,7 +85,7 @@ longform-to-content/
 - [video-use](https://github.com/browser-use/video-use) — 단어 단위 트랜스크립션 헬퍼
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) — 트랜스크립션 디폴트 (무료·로컬). 다중 화자·고난도 오디오만 [ElevenLabs Scribe](https://elevenlabs.io) 유료 옵션 (키는 환경변수로만, 문서 기록 금지)
 - 자막 폰트 — 브랜드 폰트 우선 (Bold 있고 가독성 통과 시), 한글 디폴트 [Pretendard](https://github.com/orioncactus/pretendard), pan-CJK 폴백 [Noto CJK](https://github.com/notofonts/noto-cjk)
-- gpt-image-2/Nano Banana direct API (image-gen skill) — 썸네일 생성 (OpenAI gpt-image-2 폴백 가능)
+- [Higgsfield CLI](https://higgsfield.ai) (image-gen skill) — 썸네일 생성, 기본 모델 gpt_image_2
 - [Zernio](https://zernio.com) — 발행/스케줄 (없으면 스킬이 온보딩 안내, 수동 업로드 폴백 있음)
 
 ## 왜 "빡센" 스킬인가
