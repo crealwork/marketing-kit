@@ -1,7 +1,21 @@
-# MEASUREMENT — GA4 + GTM + Clarity (광고비 쓰기 전에 끝내는 측정 기초)
+---
+name: analytics-setup
+description: Use when setting up web analytics and measurement — GA4 property + GTM install, Microsoft Clarity, conversion/key events, UTM tagging, Google Ads / Search Console links, audiences, or the AI Search channel group. Triggers: "GA4 세팅해줘", "GTM 설치", "전환 추적 붙여줘", "UTM 어떻게", "애널리틱스 연결", "잠재고객 만들어줘", "set up GA4", "conversion tracking". 광고 집행 자체는 zernio-ads, 검색엔진 등록은 seo-setup.
+---
 
-측정 없이 광고를 켜는 것 = 결과를 모르는 채로 돈을 쓰는 것. PAID-ADS.md로 가기
-전에 이 파일의 §1–§7이 완료돼 있어야 한다.
+# Analytics Setup
+
+## Hard rules
+
+1. gtag.js 직접 설치와 GTM 설치를 **동시에 하지 않는다** (데이터 2배).
+2. 내부 트래픽 필터는 정의만 하면 제외 안 됨 — **'활성'까지 전환**해야 적용.
+3. Google Ads ↔ GA4 연결은 **소급 불가** — 광고 시작 전에 최우선으로 연결.
+4. 잠재고객은 설정 시점부터 쌓임 — 광고 계획이 있으면 **미리** 생성.
+5. UTM은 소문자 + 언더바 통일; 모르면 구글 사전정의 채널 규칙을 따른다.
+6. 전환 이벤트는 자동 생성에 맡기지 말고 직접 지정 + 사람 검토.
+7. 검증은 눈으로: GA4 Realtime + GTM 미리보기 통과 후 게시.
+
+측정 없이 광고를 켜는 것 = 결과를 모르는 채로 돈을 쓰는 것. 유료 광고(zernio-ads 스킬)로 가기 전에 §1–§7이 완료돼 있어야 한다.
 
 ## 1. GA4 속성 + GTM 설치
 

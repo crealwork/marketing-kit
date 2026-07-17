@@ -1,8 +1,8 @@
 <h1 align="center">marketing-kit</h1>
 
 <p align="center">
-  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 13종.</b><br>
-  SEO 기반 공사부터 유료 광고, 무료 뉴스레터, CRM 연동, 카드뉴스, 브랜드 가이드, 휴머나이저까지.
+  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 20종.</b><br>
+  SEO·측정·광고·소셜 자동화부터 리드마그넷, 브랜드 가이드, 인쇄물 디자인, 휴머나이저까지.
 </p>
 
 ---
@@ -29,18 +29,38 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 
 ## 뭐가 들었나
 
+**기반 공사**
 | 스킬 | 하는 일 | 트리거 예시 |
 |---|---|---|
-| **seo-setup** | 검색엔진 5종 등록(Google·Naver·Bing·Daum·Pinterest) + GA4/GTM/Clarity 측정 + 로컬 SEO. 퍼블리시 head 체크리스트(favicon·OG·title 복붙 템플릿) 포함 | "이 사이트 SEO 세팅해줘" |
-| **zernio-ads** | 유료 광고 — 포스트 부스트/독립 캠페인/오디언스/analytics, Meta·Google·TikTok 등 7개 플랫폼. 예산 승인 게이트 내장 | "이 포스트 부스트해줘" |
-| **resend-email** | Resend로 트랜잭셔널 + 뉴스레터 — 무료 티어(월 3,000통)로 시작, 수신거부 링크 강제 | "뉴스레터 보내줘" |
-| **crm-connect** | 어떤 CRM이든 API로 연결하는 방법론 — HubSpot·Pipedrive·Close·Attio·Airtable 등, 연결 카드로 재사용 | "우리 CRM 연동해줘" |
-| **card-news-generator** | 인스타/스레드 카드뉴스 — 리서치→브랜드 디자인→PNG. 브랜드 프리셋 시스템 | "카드뉴스 만들어줘" |
-| **ppt-slide-generator** | 16:9 발표자료 — 리서치 + 2단계 검수 + PDF/Google Slides 딜리버리 | "이 주제로 PPT" |
-| **instantly-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 — 유저 승인 게이트 | "콜드메일 캠페인" |
-| **cyrano** | 미팅 상대 사전 리서치 → 소스 인용 브리핑 (Slack/Telegram/이메일 전달) | "이 사람 누구야?" |
-| **humanizer** | AI 초안에서 AI 티 제거 — 영/한 금지 패턴 + 구체성 주입 | "AI티 나는 거 고쳐줘" |
+| **publish-checklist** | 배포 전 head 최적화 — favicon 세트·OG 1200×630·페이지별 title·canonical, 복붙 `<head>` 템플릿 | "배포 전 체크해줘" |
+| **seo-setup** | 검색엔진 5종 등록(Google·Naver·Bing·Daum·Pinterest) + 로컬 SEO(GBP·네이버 플레이스·카카오·Yelp) | "검색엔진 등록해줘" |
+| **analytics-setup** | GA4+GTM+Clarity — 필수 설정, 전환 이벤트, UTM, 잠재고객, AI Search 채널, AI 위임 프롬프트 | "GA4 세팅해줘" |
+| **crm-connect** | 어떤 CRM이든 API로 연결하는 방법론 — HubSpot·Pipedrive·Close·Attio·Airtable 등 | "우리 CRM 연동해줘" |
+
+**콘텐츠 제작**
+| 스킬 | 하는 일 | 트리거 예시 |
+|---|---|---|
+| **card-news-generator** | 인스타/스레드 카드뉴스 — 리서치→브랜드 디자인→PNG | "카드뉴스 만들어줘" |
+| **ppt-slide-generator** | 16:9 발표자료 — 리서치 + 2단계 검수 + PDF/Google Slides | "이 주제로 PPT" |
+| **print-design** | 인쇄물(포스터·전단·현수막·명함) — 인터뷰→디자인→빡센 QA 루프, 통과본만 전달. **Frontier 모델 전용** | "포스터 만들어줘" |
 | **brand-guide** | 사이트/로고에서 측정 가능한 브랜드 시스템(토큰+보이스) 추출 — frontier 모델 권장 | "브랜드 가이드 뽑아줘" |
+| **humanizer** | AI 초안에서 AI 티 제거 — 영/한 금지 패턴 + 구체성 + 줄나눔 기본기 | "AI티 나는 거 고쳐줘" |
+| **content-repurpose** | Threads ↔ LinkedIn 등 플랫폼 간 재구성 — 번역이 아니라 네이티브 문법으로 | "이 글 링크드인용으로" |
+
+**발행 · 광고 · 리드**
+| 스킬 | 하는 일 | 트리거 예시 |
+|---|---|---|
+| **zernio-social** | Zernio로 멀티플랫폼 오가닉 발행/예약 자동화 — 캘린더, presign 업로드, 발행 승인 게이트 | "이 포스트 스케줄해줘" |
+| **zernio-ads** | 유료 광고 — 부스트/독립 캠페인/오디언스/analytics, 7개 플랫폼, 예산 승인 게이트 | "이 포스트 부스트해줘" |
+| **resend-email** | Resend 트랜잭셔널 + 뉴스레터 — 무료 티어(월 3,000통), 수신거부 링크 강제 | "뉴스레터 보내줘" |
+| **instantly-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 | "콜드메일 캠페인" |
+| **lead-magnet** | 리드마그넷 브레인스토밍→실물 제작→Google Sheets 리드 DB 연동까지 | "리드마그넷 만들자" |
+| **cyrano** | 미팅 상대 사전 리서치 → 소스 인용 브리핑 (Slack/Telegram/이메일) | "이 사람 누구야?" |
+
+**전략 · 코칭**
+| 스킬 | 하는 일 | 트리거 예시 |
+|---|---|---|
+| **dans-advice** | 마케팅이 어렵다는 유저에게 댄정 톤의 현실 조언 — 진단→처방 2~3개→오늘 할 일 1개 | "마케팅 너무 어려워" |
 | **yc-office-hours** | 아이디어·캠페인·GTM을 YC 파트너 스타일로 검증 | "이거 할만한 아이디어야?" |
 | **go-viral-or-die** | 바이럴/스턴트 마케팅 아이디어 (Roy Lee 플레이북) | "바이럴 아이디어 줘" |
 | **first-principles-coach** | 가격·프로덕트·그로스 가정을 근본부터 점검 | "가정 점검해줘" |
@@ -56,8 +76,10 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 | resend-email | `RESEND_API_KEY` (무료 발급) |
 | instantly-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
-| zernio-ads | `ZERNIO_API_KEY` |
+| zernio-social / zernio-ads | `ZERNIO_API_KEY` |
 | cyrano (전달 채널) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
+
+나머지(publish-checklist, seo-setup, analytics-setup, 콘텐츠/코칭 스킬)는 키 불필요.
 
 ## 안전 룰 (전 스킬 공통)
 

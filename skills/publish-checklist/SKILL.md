@@ -1,8 +1,12 @@
-# PUBLISH — 사이트를 내보내기 전 head 최적화 (favicon · title · OG)
+---
+name: publish-checklist
+description: Use when publishing or deploying ANY website, landing page, or web deliverable, or when auditing head tags — favicon set, OG image/tags, per-page titles, meta description, canonical, mobile typography. Triggers: "배포 전 체크해줘", "OG 태그 넣어줘", "파비콘 만들어줘", "메타태그 최적화", "링크 공유하면 카드 안 떠", "publish checklist", "head 최적화", and automatically before any new site ships.
+---
+
+# Publish Checklist
 
 **모든 새 사이트/랜딩/딜리버러블 페이지에 자동 적용하는 체크리스트.** 페이지를
-"완성"이라고 부르기 전에 이 파일의 템플릿이 채워져 있어야 한다. G0에서 기존
-사이트를 점검할 때도 같은 기준을 쓴다.
+"완성"이라고 부르기 전에 이 파일의 템플릿이 채워져 있어야 한다. 기존 사이트를 점검할 때도(seo-setup G0) 같은 기준을 쓴다.
 
 ## 1. 복붙 템플릿 (`<head>`)
 
