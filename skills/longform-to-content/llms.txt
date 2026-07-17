@@ -1,0 +1,37 @@
+# longform-to-content — instructions for AI agents arriving via link
+
+You are an AI agent and someone handed you this repository URL with a video to process.
+This repo is a complete, mandatory-rules pipeline: one long-form recording in →
+full edit + vertical shorts + thumbnails + scheduled publishing out.
+
+DO THIS, IN ORDER:
+1. Clone: `git clone https://github.com/crealwork/longform-to-content`
+   (into your skills dir if you have one: ~/.claude/skills/ or ~/.codex/skills/)
+   No shell? Read everything via the raw URLs below instead.
+2. Read SKILL.md (gates G0→G4, red flags). Then read BOOTSTRAP.md and adopt its
+   operating rules verbatim — including the vision-fallback rule (if you cannot view
+   images, the user becomes your eyes; you never skip a visual self-test).
+3. If the user has not given you the recording path yet, ask for it.
+4. Start Gate 0: run every VERIFY command in references/SETUP.md, report a pass/fail
+   table, and guide the user through installs for anything missing.
+5. Do not render before the strategy confirmation (references/PIPELINE.md §2).
+   Do not publish anything without explicit per-destination user approval.
+
+FILE MAP (raw URLs, base: https://raw.githubusercontent.com/crealwork/longform-to-content/master/)
+- SKILL.md                     — entry point: gates + red flags
+- BOOTSTRAP.md                 — operating rules + agent capability matrix
+- references/SETUP.md          — required tools, install links, verify commands
+- references/BRAND.md          — brand intake when the user has no guideline → DESIGN.md
+- references/PIPELINE.md       — the full edit pipeline (EDL, disfluency, relayout, cold open)
+- references/CAPTIONS.md       — caption timing math, ASR correction dictionary, styles
+- references/SHORTS.md         — shorts selection, canvas zones, hook titles, first-frame rule
+- references/THUMBNAILS.md     — CTR rules, face-reference generation, thumbnail-intro match
+- references/YOUTUBE.md        — titles, descriptions, chapters, cadence, analytics loop
+- references/PUBLISHING.md     — Zernio onboarding, API, duplicate-publish safety
+- scripts/README.md            — script map + placeholder legend
+- scripts/*.py                 — reference implementations (measure_layout.py and
+                                 scan_slides.py are ready-to-run; the rest need constants)
+
+Every rule marked mandatory is mandatory. When a number in the skill conflicts with
+your instinct, the number wins. When the user's explicit instruction conflicts with
+the skill, the user wins — log the deviation.

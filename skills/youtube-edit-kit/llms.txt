@@ -1,0 +1,36 @@
+# youtube-edit-kit
+
+> Agent skill: one source video in -> a clean YouTube cut out (silence/filler
+> cuts, burned corrected captions, SRT + chapters) plus vertical shorts.
+> Free and local: ffmpeg + faster-whisper, no API key.
+
+For agents that cannot `git clone`: read the files below via raw URLs, in this
+order. Adopt SKILL.md's gates and hard rules as binding.
+
+## Entry point
+
+- [SKILL.md](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/SKILL.md): gates G0-G6, hard rules, red flags — read FIRST
+- [BOOTSTRAP.md](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/BOOTSTRAP.md): session prompt for harness-less agents
+
+## References (read at the gate that names them)
+
+- [references/SETUP.md](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/references/SETUP.md): required tools + verify commands
+- [references/EDIT.md](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/references/EDIT.md): full pipeline — transcribe, EDL, fillers, render, burn
+- [references/CAPTIONS.md](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/references/CAPTIONS.md): caption bible — timeline mapping math, ASR corrections, sync verification
+- [references/SHORTS.md](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/references/SHORTS.md): shorts bible — moment selection, hook titles, first-frame rule
+
+## Scripts (runnable CLIs; run these instead of improvising ffmpeg)
+
+- [scripts/transcribe.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/transcribe.py): faster-whisper word-level transcription (cached)
+- [scripts/gen_edl.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/gen_edl.py): silence-cut EDL, keep-windows, cut subtraction
+- [scripts/scan_fillers.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/scan_fillers.py): disfluency scan (review-first)
+- [scripts/render_cut.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/render_cut.py): per-segment render + lossless concat
+- [scripts/scan_terms.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/scan_terms.py): correction-candidate miner (proper nouns, jargon, numbers, onomatopoeia) — agent reviews, blocking before burn
+- [scripts/gen_srt.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/gen_srt.py): output-timeline SRT + chapters
+- [scripts/gen_shorts.py](https://raw.githubusercontent.com/crealwork/youtube-edit-kit/main/scripts/gen_shorts.py): vertical shorts builder (hook title + captions)
+
+## Lineage
+
+Distilled from [longform-to-content](https://github.com/crealwork/longform-to-content)
+(full webinar/lecture pipeline: relayout, thumbnails, publishing). Upgrade there
+when the job outgrows this kit.

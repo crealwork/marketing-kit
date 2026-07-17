@@ -1,8 +1,8 @@
 <h1 align="center">marketing-kit</h1>
 
 <p align="center">
-  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 20종.</b><br>
-  SEO·측정·광고·소셜 자동화부터 리드마그넷, 브랜드 가이드, 인쇄물 디자인, 휴머나이저까지.
+  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 24종.</b><br>
+  SEO/GEO·측정·광고·소셜 자동화부터 영상 편집, 썸네일, 이미지 생성, 리드마그넷, 인쇄물 디자인까지.
 </p>
 
 ---
@@ -33,7 +33,7 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 | 스킬 | 하는 일 | 트리거 예시 |
 |---|---|---|
 | **publish-checklist** | 배포 전 head 최적화 — favicon 세트·OG 1200×630·페이지별 title·canonical, 복붙 `<head>` 템플릿 | "배포 전 체크해줘" |
-| **seo-setup** | 검색엔진 5종 등록(Google·Naver·Bing·Daum·Pinterest) + 로컬 SEO(GBP·네이버 플레이스·카카오·Yelp) | "검색엔진 등록해줘" |
+| **seo-geo-setup** | 검색엔진 5종 등록 + **GEO**(AI 검색 인용 — 크롤러 허용·llms.txt·직답 구조) + 로컬 SEO | "검색엔진 등록해줘", "AI 검색에 뜨게" |
 | **analytics-setup** | GA4+GTM+Clarity — 필수 설정, 전환 이벤트, UTM, 잠재고객, AI Search 채널, AI 위임 프롬프트 | "GA4 세팅해줘" |
 | **crm-connect** | 어떤 CRM이든 API로 연결하는 방법론 — HubSpot·Pipedrive·Close·Attio·Airtable 등 | "우리 CRM 연동해줘" |
 
@@ -46,6 +46,14 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 | **brand-guide** | 사이트/로고에서 측정 가능한 브랜드 시스템(토큰+보이스) 추출 — frontier 모델 권장 | "브랜드 가이드 뽑아줘" |
 | **humanizer** | AI 초안에서 AI 티 제거 — 영/한 금지 패턴 + 구체성 + 줄나눔 기본기 | "AI티 나는 거 고쳐줘" |
 | **content-repurpose** | Threads ↔ LinkedIn 등 플랫폼 간 재구성 — 번역이 아니라 네이티브 문법으로 | "이 글 링크드인용으로" |
+| **image-gen** | 마케팅 이미지 생성 — gpt-image-2(기본)/Nano Banana만, no fallback, 변형 3개+ 기본, 광고는 A/B 필수 | "뉴스레터 이미지 만들어줘" |
+| **thumbnail-maker** | 영상 썸네일 — 항상 4개+ 변형 세트(A/B), 텍스트는 오버레이, 실제 얼굴 사진 기반 | "썸네일 뽑아줘" |
+
+**영상**
+| 스킬 | 하는 일 | 트리거 예시 |
+|---|---|---|
+| **youtube-edit-kit** | 기본 유튜브 편집 — 무음/필러 컷, AI 용어검수 자막, SRT/챕터, 세로 쇼츠·릴스 (무료·로컬: ffmpeg+faster-whisper) | "이 영상 편집해줘", "쇼츠 만들어줘" |
+| **longform-to-content** | 통영상(웨비나·강의) → 풀편집 + 쇼츠 4–8개 + CTR 썸네일 + 예약 발행까지 풀 파이프라인 | "웨비나 녹화 편집해서 올려줘" |
 
 **발행 · 광고 · 리드**
 | 스킬 | 하는 일 | 트리거 예시 |
@@ -77,9 +85,14 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 | instantly-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
+| image-gen / thumbnail-maker / longform-to-content 썸네일 | `OPENAI_API_KEY` 또는 `GEMINI_API_KEY` |
 | cyrano (전달 채널) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-나머지(publish-checklist, seo-setup, analytics-setup, 콘텐츠/코칭 스킬)는 키 불필요.
+나머지(publish-checklist, seo-geo-setup, analytics-setup, youtube-edit-kit, 코칭 스킬)는 키 불필요.
+
+**이미지 생성 정책 (킷 공통)**: 허용 모델 = OpenAI gpt-image-2(기본) + Google Nano Banana 둘뿐.
+다른 모델/중개 서비스로의 폴백 금지 — 실패는 보고. 광고·썸네일 등 성과형 비주얼은 **항상 여러
+버전(A/B)** 으로 생성합니다.
 
 ## 안전 룰 (전 스킬 공통)
 

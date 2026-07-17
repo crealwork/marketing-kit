@@ -21,8 +21,11 @@ Zernio Ads API 하나로 **Meta(FB/IG)·Google·TikTok·LinkedIn·Pinterest·X**
 4. 모든 호출은 Python urllib + utf-8 (Windows에서 curl+cp1252는 이모지 응답에
    크래시). 업데이트는 **PUT** (이 서버에서 PATCH는 405).
 5. **측정 선행 조건**: GA4↔Google Ads 연결, 전환 이벤트, 랜딩 URL UTM이 준비돼
-   있어야 한다 (seo-setup 스킬의 MEASUREMENT 게이트). 측정 없는 지출은 시작하지
-   않는다.
+   있어야 한다 (analytics-setup 스킬). 측정 없는 지출은 시작하지 않는다.
+6. **A/B는 선택이 아니라 기본**: 캠페인당 creative **최소 2개, 권장 3–4개**
+   (훅 축 × 비주얼 축을 다르게 — image-gen 스킬로 변형 세트 생성). 단일 소재
+   캠페인은 학습 없는 지출이다. 네이밍 `{campaign}_{axis}` 로 성과 추적,
+   24–48h 점검에서 진 소재는 PUT으로 일시정지.
 
 ## Setup
 
