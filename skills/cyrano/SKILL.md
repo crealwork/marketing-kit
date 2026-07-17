@@ -127,4 +127,4 @@ python -m engine deliver --brief brief.txt \
 
 ## Credits
 
-cyrano는 GPTAKU님의 **insane-search**를 포크해서 만들었습니다 — 리서치 엔진의 뼈대가 그분 작업입니다. 감사합니다.
+cyrano는 GPTAKU님의 [**insane-search**](https://github.com/fivetaku/insane-search)를 포크해서 만들었습니다 — 리서치 엔진의 뼈대가 그분 작업입니다. 감사합니다.

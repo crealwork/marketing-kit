@@ -1,13 +1,13 @@
 {
-  "name": "marketing-kit",
-  "version": "1.3.0",
+  "name": "ai-marketing-kit",
+  "version": "1.3.1",
   "description": "24 battle-tested marketing skills for AI agents: publish checklist, SEO + GEO (AI search) setup, GA4/GTM analytics, universal CRM connection, card news, slide decks, print design with QA loop and press-ready output, brand guide extraction, humanizer, content repurposing, image generation and video thumbnails (gpt-image-2/Nano Banana, A/B variants), YouTube editing + shorts, longform-to-content pipeline, Zernio social automation + paid ads, Resend newsletters, cold email, lead magnets, pre-meeting research, Dan's marketing advice, YC-style validation, viral ideas, first-principles coaching.",
   "author": {
     "name": "Sundayable",
     "url": "https://www.sundayable.com"
   },
-  "homepage": "https://github.com/crealwork/marketing-kit",
-  "repository": "https://github.com/crealwork/marketing-kit",
+  "homepage": "https://github.com/crealwork/ai-marketing-kit",
+  "repository": "https://github.com/crealwork/ai-marketing-kit",
   "license": "MIT",
   "keywords": ["marketing", "seo", "email-marketing", "cold-email", "crm", "content", "card-news", "korean", "ga4", "ads"]
 }

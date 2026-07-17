@@ -1,4 +1,4 @@
-﻿__pycache__/
-*.pyc
-.state/
-skills/cyrano/config.json
+﻿.firecrawl/
+__pycache__/
+assets/frame_*
+assets/hero_bg.png

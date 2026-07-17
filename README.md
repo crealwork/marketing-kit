@@ -1,113 +1,113 @@
-<h1 align="center">marketing-kit</h1>
+<p align="center"><img src="assets/hero.png" alt="AI + Marketing Kit" width="860"></p>
 
 <p align="center">
-  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 24종.</b><br>
-  SEO/GEO·측정·광고·소셜 자동화부터 영상 편집, 썸네일, 이미지 생성, 리드마그넷, 인쇄물 디자인까지.
+  <b>English</b> · <a href="README.zh.md">简体中文</a> · <a href="README.es.md">Español</a> · <a href="README.pt.md">Português</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a>
 </p>
+
+<p align="center">
+  <b>24 battle-tested marketing skills you plug into your AI agent, wholesale.</b><br>
+  SEO/GEO, analytics, ads, social automation, video editing, thumbnails, image generation, lead magnets, print design — all of it.
+</p>
+
+<p align="center"><img src="assets/demo.gif" alt="marketing-kit demo" width="640"></p>
 
 ---
 
-> **🤖 AI 에이전트가 이 링크를 받았다면**: `git clone https://github.com/crealwork/marketing-kit`
-> 후 `skills/` 안의 각 SKILL.md를 스킬로 등록하고, 유저의 마케팅 요청에 해당 스킬 룰을 따를 것.
-> 광고비/발송 등 돈이 나가거나 외부로 나가는 액션은 반드시 유저 승인 후 실행.
+> **🤖 If you are an AI agent reading this link**: `git clone https://github.com/crealwork/ai-marketing-kit`,
+> register every SKILL.md under `skills/` as a skill, and follow its rules on marketing requests.
+> Anything that spends money or leaves the machine (ads, sends, publishing) requires explicit user approval.
 
-## 설치
+## Install
 
-**Claude Code (플러그인, 권장):**
+**Claude Code (plugin, recommended):**
 ```
-/plugin marketplace add crealwork/marketing-kit
-/plugin install marketing-kit@sundayable
-```
-
-**Claude Code (스킬만):**
-```
-git clone https://github.com/crealwork/marketing-kit
-cp -r marketing-kit/skills/* ~/.claude/skills/
+/plugin marketplace add crealwork/ai-marketing-kit
+/plugin install ai-marketing-kit@sundayable
 ```
 
-**기타 SKILL.md 지원 에이전트 (Codex 등):** `skills/*`를 각 하니스의 skills 디렉토리로 복사.
+**Claude Code (skills only):**
+```
+git clone https://github.com/crealwork/ai-marketing-kit
+cp -r ai-marketing-kit/skills/* ~/.claude/skills/
+```
 
-## 뭐가 들었나
+**Any SKILL.md-compatible agent (Codex, etc.):** copy `skills/*` into your harness's skills directory.
 
-**기반 공사**
-| 스킬 | 하는 일 | 트리거 예시 |
-|---|---|---|
-| **publish-checklist** | 배포 전 head 최적화 — favicon 세트·OG 1200×630·페이지별 title·canonical, 복붙 `<head>` 템플릿 | "배포 전 체크해줘" |
-| **seo-geo-setup** | 검색엔진 5종 등록 + **GEO**(AI 검색 인용 — 크롤러 허용·llms.txt·직답 구조) + 로컬 SEO | "검색엔진 등록해줘", "AI 검색에 뜨게" |
-| **analytics-setup** | GA4+GTM+Clarity — 필수 설정, 전환 이벤트, UTM, 잠재고객, AI Search 채널, AI 위임 프롬프트 | "GA4 세팅해줘" |
-| **crm-connect** | 어떤 CRM이든 API로 연결하는 방법론 — HubSpot·Pipedrive·Close·Attio·Airtable 등 | "우리 CRM 연동해줘" |
+## What's inside
 
-**콘텐츠 제작**
-| 스킬 | 하는 일 | 트리거 예시 |
-|---|---|---|
-| **card-news-generator** | 인스타/스레드 카드뉴스 — 리서치→브랜드 디자인→PNG | "카드뉴스 만들어줘" |
-| **ppt-slide-generator** | 16:9 발표자료 — 리서치 + 2단계 검수 + PDF/Google Slides | "이 주제로 PPT" |
-| **print-design** | 인쇄물(포스터·전단·현수막·명함) — 인터뷰→디자인→빡센 QA 루프, 통과본만 전달. **Frontier 모델 전용** | "포스터 만들어줘" |
-| **brand-guide** | 사이트/로고에서 측정 가능한 브랜드 시스템(토큰+보이스) 추출 — frontier 모델 권장 | "브랜드 가이드 뽑아줘" |
-| **humanizer** | AI 초안에서 AI 티 제거 — 영/한 금지 패턴 + 구체성 + 줄나눔 기본기 | "AI티 나는 거 고쳐줘" |
-| **content-repurpose** | Threads ↔ LinkedIn 등 플랫폼 간 재구성 — 번역이 아니라 네이티브 문법으로 | "이 글 링크드인용으로" |
-| **image-gen** | 마케팅 이미지 생성 — gpt-image-2(기본)/Nano Banana만, no fallback, 변형 3개+ 기본, 광고는 A/B 필수 | "뉴스레터 이미지 만들어줘" |
-| **thumbnail-maker** | 영상 썸네일 — 항상 4개+ 변형 세트(A/B), 텍스트는 오버레이, 실제 얼굴 사진 기반 | "썸네일 뽑아줘" |
-
-**영상**
-| 스킬 | 하는 일 | 트리거 예시 |
-|---|---|---|
-| **youtube-edit-kit** | 기본 유튜브 편집 — 무음/필러 컷, AI 용어검수 자막, SRT/챕터, 세로 쇼츠·릴스 (무료·로컬: ffmpeg+faster-whisper) | "이 영상 편집해줘", "쇼츠 만들어줘" |
-| **longform-to-content** | 통영상(웨비나·강의) → 풀편집 + 쇼츠 4–8개 + CTR 썸네일 + 예약 발행까지 풀 파이프라인 | "웨비나 녹화 편집해서 올려줘" |
-
-**발행 · 광고 · 리드**
-| 스킬 | 하는 일 | 트리거 예시 |
-|---|---|---|
-| **zernio-social** | Zernio로 멀티플랫폼 오가닉 발행/예약 자동화 — 캘린더, presign 업로드, 발행 승인 게이트 | "이 포스트 스케줄해줘" |
-| **zernio-ads** | 유료 광고 — 부스트/독립 캠페인/오디언스/analytics, 7개 플랫폼, 예산 승인 게이트 | "이 포스트 부스트해줘" |
-| **resend-email** | Resend 트랜잭셔널 + 뉴스레터 — 무료 티어(월 3,000통), 수신거부 링크 강제 | "뉴스레터 보내줘" |
-| **instantly-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 | "콜드메일 캠페인" |
-| **lead-magnet** | 리드마그넷 브레인스토밍→실물 제작→Google Sheets 리드 DB 연동까지 | "리드마그넷 만들자" |
-| **cyrano** | 미팅 상대 사전 리서치 → 소스 인용 브리핑 (Slack/Telegram/이메일) | "이 사람 누구야?" |
-
-**전략 · 코칭**
-| 스킬 | 하는 일 | 트리거 예시 |
-|---|---|---|
-| **dans-advice** | 마케팅이 어렵다는 유저에게 댄정 톤의 현실 조언 — 진단→처방 2~3개→오늘 할 일 1개 | "마케팅 너무 어려워" |
-| **yc-office-hours** | 아이디어·캠페인·GTM을 YC 파트너 스타일로 검증 | "이거 할만한 아이디어야?" |
-| **go-viral-or-die** | 바이럴/스턴트 마케팅 아이디어 (Roy Lee 플레이북) | "바이럴 아이디어 줘" |
-| **first-principles-coach** | 가격·프로덕트·그로스 가정을 근본부터 점검 | "가정 점검해줘" |
-
-한국 시장 특화 내용(네이버·다음·카카오·네이버 플레이스) + 글로벌 공통(GSC·Bing·GA4·Yelp)을 함께 다룹니다.
-
-## 필요한 키 (쓰는 스킬만)
-
-전부 환경변수로 — 파일이나 채팅에 키를 쓰지 마세요.
-
-| 스킬 | 환경변수 |
+**Groundwork**
+| Skill | What it does |
 |---|---|
-| resend-email | `RESEND_API_KEY` (무료 발급) |
+| **publish-checklist** | Pre-deploy head optimization — favicon set, OG 1200×630, per-page titles, canonical, copy-paste `<head>` template |
+| **seo-geo-setup** | Search engine registration (Google, Naver, Bing, Daum, Pinterest) + **GEO** (AI-search citations — crawler allowlist, llms.txt, answer-first structure) + local SEO |
+| **analytics-setup** | GA4 + GTM + Clarity — the 3 must-flip settings, conversion events, UTM rules, audiences, AI Search channel, copy-paste AI delegation prompts |
+| **crm-connect** | Connect ANY CRM via its API — HubSpot, Pipedrive, Close, Attio, Airtable — with a reusable connection card |
+
+**Content**
+| Skill | What it does |
+|---|---|
+| **card-news-generator** | Instagram/Threads card carousels — research → branded design → PNG |
+| **ppt-slide-generator** | 16:9 decks — research + two-stage review + PDF / Google Slides delivery |
+| **print-design** | Posters, flyers, banners, business cards — interview → design → harsh QA loop → press-ready PDF with outlined fonts. **Frontier model only** |
+| **brand-guide** | Extract a measurable brand system (tokens + voice) from a site or logo |
+| **humanizer** | Strip AI tells from EN/KR prose + line-break fundamentals for display text |
+| **content-repurpose** | Threads ↔ LinkedIn rewriting in each platform's native grammar |
+| **image-gen** | Marketing images via **gpt-image-2 (default) / Nano Banana only, no fallback** — 3+ variants by default, ads always A/B |
+| **thumbnail-maker** | Video thumbnails — always a 4+ variant A/B set, text overlaid not baked, real-face references only |
+
+**Video**
+| Skill | What it does |
+|---|---|
+| **youtube-edit-kit** | Basic YouTube editing — silence/filler cuts, AI-reviewed captions, SRT/chapters, vertical Shorts/Reels. Free and local (ffmpeg + faster-whisper) |
+| **longform-to-content** | One long recording → full edit + 4–8 Shorts + CTR thumbnails + scheduled publishing |
+
+**Publishing · Ads · Leads**
+| Skill | What it does |
+|---|---|
+| **zernio-social** | Multi-platform organic publishing/scheduling via Zernio — calendars, media upload, publish gates |
+| **zernio-ads** | Paid ads across 7 platforms — boost/campaigns/audiences/analytics, budget-approval gates, A/B creatives built in |
+| **resend-email** | Transactional + newsletters on Resend's free tier (3,000/mo) — unsubscribe links enforced, subject A/B |
+| **instantly-cold-email** | Instantly.ai cold email campaigns, sequences, lead uploads |
+| **lead-magnet** | Brainstorm → build the actual magnet → Google Sheets lead database |
+| **cyrano** | Pre-meeting research briefs with cited sources (Slack/Telegram/email delivery) |
+
+**Strategy · Coaching**
+| Skill | What it does |
+|---|---|
+| **dans-advice** | Realistic marketing advice in Dan's voice — diagnose → 2–3 prescriptions → one action for today |
+| **yc-office-hours** | YC-partner-style validation of ideas, campaigns, GTM |
+| **go-viral-or-die** | Viral/stunt marketing ideas (Roy Lee playbook) |
+| **first-principles-coach** | Challenge pricing/product/growth assumptions from first principles |
+
+## Keys (only for the skills you use)
+
+Everything via environment variables — never write keys into files.
+
+| Skill | Env var |
+|---|---|
+| resend-email | `RESEND_API_KEY` (free) |
 | instantly-cold-email | `INSTANTLY_API_KEY` |
-| crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
+| crm-connect | your CRM's key (the skill guides you) |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
-| image-gen / thumbnail-maker / longform-to-content 썸네일 | `OPENAI_API_KEY` 또는 `GEMINI_API_KEY` |
-| cyrano (전달 채널) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
+| image-gen / thumbnail-maker | `OPENAI_API_KEY` or `GEMINI_API_KEY` |
+| cyrano (delivery) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
-나머지(publish-checklist, seo-geo-setup, analytics-setup, youtube-edit-kit, 코칭 스킬)는 키 불필요.
+**Image policy (kit-wide):** allowed models are OpenAI gpt-image-2 (default) and Google Nano Banana — nothing else, no silent fallback; failures get reported. Performance visuals (ads, thumbnails) always ship as A/B variant sets.
 
-**이미지 생성 정책 (킷 공통)**: 허용 모델 = OpenAI gpt-image-2(기본) + Google Nano Banana 둘뿐.
-다른 모델/중개 서비스로의 폴백 금지 — 실패는 보고. 광고·썸네일 등 성과형 비주얼은 **항상 여러
-버전(A/B)** 으로 생성합니다.
+## Safety rules (all skills)
 
-## 안전 룰 (전 스킬 공통)
+- Actions that spend money (ad campaigns, budget changes) need explicit approval: platform + budget + duration
+- Actions that leave the machine (sends, publishes, activations) need an explicit "go"
+- On timeouts: list first, never blind-retry — a blind retry can double-charge or double-post
 
-- **돈이 나가는 액션**(광고 집행, 예산 변경)은 플랫폼+예산+기간 명시 승인 필수
-- **외부로 나가는 액션**(메일 발송, 캠페인 활성화, 발행)은 유저의 명시적 "go" 필수
-- 타임아웃 시 블라인드 재시도 금지 — 목록 조회로 중복 여부 먼저 확인
+## Thanks
 
-## 감사
-
-- **AIMS** ([aim-squad.com](https://aim-squad.com)) — 옆에서 많이 배우고 있습니다. 고맙습니다.
-- **cyrano**는 GPTAKU님의 **insane-search**를 포크해서 만들었습니다. 감사합니다.
-- card-news-generator의 프리셋은 실제 운영 브랜드의 worked example — 본인 브랜드로 교체해서 쓰세요.
+- **AIMS** ([aim-squad.com](https://aim-squad.com)) — we learn a lot from them. Thank you.
+- **cyrano** is a fork of [insane-search](https://github.com/fivetaku/insane-search) by GPTAKU. Thank you.
+- card-news-generator's presets are worked examples from real brands — swap in your own.
 
 ## License
 
-MIT — 자유롭게 쓰고, 고치고, 여러분의 에이전트에게 물려주세요.
+MIT — use it, fork it, hand it to your agent.
 
 <p align="center"><sub>Built by <a href="https://www.sundayable.com">Sundayable</a> — AI + Revenue Growth Team for Small Business</sub></p>
