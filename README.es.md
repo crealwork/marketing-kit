@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>25 habilidades de marketing probadas en batalla, listas para enchufar a tu agente de IA.</b><br>
+  <b>26 habilidades de marketing probadas en batalla, listas para enchufar a tu agente de IA.</b><br>
   SEO/GEO, analítica, anuncios, automatización social, edición de video, miniaturas, generación de imágenes, lead magnets, diseño para imprenta — todo.
 </p>
 
-<p align="center"><img src="assets/demo.gif" alt="AI + Marketing Kit demo" width="640"></p>
+<p align="center"><img src="assets/demo.es.gif" alt="AI + Marketing Kit demo" width="640"></p>
 
 ---
 
@@ -33,11 +33,14 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 **Cualquier agente compatible con SKILL.md (Codex, etc.):** copia `skills/*` al directorio de skills de tu harness.
 
+> **Primer uso:** di **"configura mi kit de marketing"** — la skill `kit-onboarding` crea DESIGN.md (tokens de marca), BRAND-VOICE.md y la base de CLAUDE.md en ~10 minutos.
+
 ## Qué incluye
 
 **Cimientos**
 | Skill | Qué hace |
 |---|---|
+| **kit-onboarding** | Empieza aquí — crea DESIGN.md, BRAND-VOICE.md y la base de CLAUDE.md que usan las demás skills |
 | **publish-checklist** | Optimización del head antes del deploy — set de favicons, OG 1200×630, títulos por página, canonical, plantilla `<head>` lista para pegar |
 | **seo-geo-setup** | Registro en buscadores (Google, Naver, Bing, Daum, Pinterest) + **GEO** (citas en búsqueda con IA — allowlist de crawlers, llms.txt, estructura de respuesta directa) + SEO local |
 | **analytics-setup** | GA4 + GTM + Clarity — los 3 ajustes imprescindibles, eventos de conversión, reglas UTM, audiencias, canal AI Search, prompts de delegación listos para pegar |
@@ -100,6 +103,10 @@ Todo por variables de entorno — nunca escribas claves en archivos.
 - Las acciones que gastan dinero (campañas, cambios de presupuesto) requieren aprobación explícita: plataforma + presupuesto + duración
 - Las acciones que salen de la máquina (envíos, publicaciones, activaciones) requieren un "go" explícito
 - Ante timeouts: listar primero, nunca reintentar a ciegas — un reintento ciego puede duplicar cargos o publicaciones
+
+## Sobre el creador
+
+**Dan Jeong** — marketer y fundador con 11 años de experiencia, embajador de Lovable. Hoy construye [Sundayable](https://www.sundayable.com), una startup de IA que reinventa cada paso del marketing con IA — este kit es el que usa cada semana.
 
 ## Gracias
 

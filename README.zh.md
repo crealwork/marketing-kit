@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>25 个经过实战检验的营销技能，一次性装进你的 AI 智能体。</b><br>
+  <b>26 个经过实战检验的营销技能，一次性装进你的 AI 智能体。</b><br>
   SEO/GEO、数据分析、广告、社媒自动化、视频剪辑、缩略图、图像生成、引流磁铁、印刷设计 — 全都有。
 </p>
 
-<p align="center"><img src="assets/demo.gif" alt="AI + Marketing Kit demo" width="640"></p>
+<p align="center"><img src="assets/demo.zh.gif" alt="AI + Marketing Kit demo" width="640"></p>
 
 ---
 
@@ -33,11 +33,14 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 **其他支持 SKILL.md 的智能体（Codex 等）：** 将 `skills/*` 复制到对应的 skills 目录。
 
+> **第一次使用：** 说 **"帮我设置营销套件"** — `kit-onboarding` 技能会在约 10 分钟内建好 DESIGN.md（品牌令牌）、BRAND-VOICE.md 和 CLAUDE.md 基础。
+
 ## 包含哪些技能
 
 **基础建设**
 | 技能 | 功能 |
 |---|---|
+| **kit-onboarding** | 从这里开始 — 搭建所有技能共用的 DESIGN.md、BRAND-VOICE.md 和 CLAUDE.md 基础 |
 | **publish-checklist** | 上线前 head 优化 — favicon 全套、OG 1200×630、逐页 title、canonical，可直接复制的 `<head>` 模板 |
 | **seo-geo-setup** | 搜索引擎注册（Google、Naver、Bing、Daum、Pinterest）+ **GEO**（AI 搜索引用 — 爬虫白名单、llms.txt、答案先行结构）+ 本地 SEO |
 | **analytics-setup** | GA4 + GTM + Clarity — 3 个必改设置、转化事件、UTM 规则、受众、AI 搜索渠道、可复制的 AI 委托提示词 |
@@ -100,6 +103,10 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 - 花钱的操作（投放广告、改预算）需要明确批准：平台 + 预算 + 周期
 - 对外的操作（发送、发布、激活）需要明确的 "go"
 - 超时后先查列表、绝不盲目重试 — 盲目重试可能重复扣费或重复发布
+
+## 关于作者
+
+**Dan Jeong** — 11 年经验的营销人兼创业者，Lovable 大使。目前在打造 AI 创业公司 [Sundayable](https://www.sundayable.com)，用 AI 重塑营销的每个环节 — 这套工具就是他每周实际在用的。
 
 ## 致谢
 

@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 25종.</b><br>
+  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 26종.</b><br>
   SEO/GEO·측정·광고·소셜 자동화부터 영상 편집, 썸네일, 이미지 생성, 리드마그넷, 인쇄물 디자인까지.
 </p>
 
-<p align="center"><img src="assets/demo.gif" alt="marketing-kit demo" width="640"></p>
+<p align="center"><img src="assets/demo.ko.gif" alt="marketing-kit demo" width="640"></p>
 
 ---
 
@@ -33,11 +33,14 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 **기타 SKILL.md 지원 에이전트 (Codex 등):** `skills/*`를 각 하니스의 skills 디렉토리로 복사.
 
+> **처음이라면:** **"마케팅 킷 세팅해줘"** 라고 말하세요 — `kit-onboarding` 스킬이 DESIGN.md(브랜드 토큰)·BRAND-VOICE.md·CLAUDE.md 기초를 10분 안에 깔아줘서, 이후 모든 스킬이 처음부터 당신 브랜드로 말합니다.
+
 ## 뭐가 들었나
 
 **기반 공사**
 | 스킬 | 하는 일 |
 |---|---|
+| **kit-onboarding** | 시작은 여기 — 모든 스킬이 읽는 DESIGN.md·BRAND-VOICE.md·CLAUDE.md 기초 세팅 |
 | **publish-checklist** | 배포 전 head 최적화 — favicon 세트·OG 1200×630·페이지별 title·canonical, 복붙 `<head>` 템플릿 |
 | **seo-geo-setup** | 검색엔진 5종 등록(Google·Naver·Bing·Daum·Pinterest) + **GEO**(AI 검색 인용 — 크롤러 허용·llms.txt·직답 구조) + 로컬 SEO |
 | **analytics-setup** | GA4+GTM+Clarity — 필수 설정 3가지, 전환 이벤트, UTM, 잠재고객, AI Search 채널, AI 위임 프롬프트 |
@@ -100,6 +103,10 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 - 돈이 나가는 액션(광고 집행·예산 변경)은 플랫폼+예산+기간 명시 승인 필수
 - 외부로 나가는 액션(발송·발행·활성화)은 명시적 "go" 필수
 - 타임아웃 시 목록 조회 먼저 — 블라인드 재시도는 중복 과금/중복 게시
+
+## 만든 사람
+
+**댄 정 (Dan Jeong)** — 11년차 마케터이자 창업가, Lovable 앰버서더. 지금은 AI 스타트업 [Sundayable](https://www.sundayable.com)을 만들며 마케팅의 모든 과정을 AI로 혁신하는 중입니다. 이 킷은 매주 실제로 굴리는 도구들이에요.
 
 ## 감사
 

@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>25 habilidades de marketing testadas em batalha, prontas para plugar no seu agente de IA.</b><br>
+  <b>26 habilidades de marketing testadas em batalha, prontas para plugar no seu agente de IA.</b><br>
   SEO/GEO, analytics, anúncios, automação social, edição de vídeo, thumbnails, geração de imagens, iscas digitais, design gráfico — tudo.
 </p>
 
-<p align="center"><img src="assets/demo.gif" alt="AI + Marketing Kit demo" width="640"></p>
+<p align="center"><img src="assets/demo.pt.gif" alt="AI + Marketing Kit demo" width="640"></p>
 
 ---
 
@@ -33,11 +33,14 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 **Qualquer agente compatível com SKILL.md (Codex etc.):** copie `skills/*` para o diretório de skills do seu harness.
 
+> **Primeiro uso:** diga **"configure meu kit de marketing"** — a skill `kit-onboarding` cria DESIGN.md (tokens de marca), BRAND-VOICE.md e a base do CLAUDE.md em ~10 minutos.
+
 ## O que vem dentro
 
 **Fundação**
 | Skill | O que faz |
 |---|---|
+| **kit-onboarding** | Comece aqui — cria DESIGN.md, BRAND-VOICE.md e a base do CLAUDE.md que as outras skills usam |
 | **publish-checklist** | Otimização do head antes do deploy — set de favicons, OG 1200×630, títulos por página, canonical, template `<head>` pronto para colar |
 | **seo-geo-setup** | Registro em buscadores (Google, Naver, Bing, Daum, Pinterest) + **GEO** (citações em busca por IA — allowlist de crawlers, llms.txt, estrutura de resposta direta) + SEO local |
 | **analytics-setup** | GA4 + GTM + Clarity — os 3 ajustes obrigatórios, eventos de conversão, regras de UTM, públicos, canal AI Search, prompts de delegação prontos |
@@ -100,6 +103,10 @@ Tudo via variáveis de ambiente — nunca escreva chaves em arquivos.
 - Ações que gastam dinheiro (campanhas, mudanças de orçamento) exigem aprovação explícita: plataforma + orçamento + duração
 - Ações que saem da máquina (envios, publicações, ativações) exigem um "go" explícito
 - Em timeouts: liste primeiro, nunca tente de novo às cegas — retry cego pode duplicar cobrança ou publicação
+
+## Sobre o criador
+
+**Dan Jeong** — marketeiro e fundador com 11 anos de estrada, embaixador da Lovable. Hoje constrói a [Sundayable](https://www.sundayable.com), uma startup de IA que reinventa cada etapa do marketing com IA — este kit é o que ele usa toda semana.
 
 ## Agradecimentos
 

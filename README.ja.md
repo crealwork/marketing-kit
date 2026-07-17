@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>実戦で鍛えた25のマーケティングスキルを、AIエージェントに丸ごと組み込む。</b><br>
+  <b>実戦で鍛えた26のマーケティングスキルを、AIエージェントに丸ごと組み込む。</b><br>
   SEO/GEO、計測、広告、SNS自動化、動画編集、サムネイル、画像生成、リードマグネット、印刷デザインまで全部。
 </p>
 
-<p align="center"><img src="assets/demo.gif" alt="AI + Marketing Kit demo" width="640"></p>
+<p align="center"><img src="assets/demo.ja.gif" alt="AI + Marketing Kit demo" width="640"></p>
 
 ---
 
@@ -33,11 +33,14 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 **SKILL.md 対応の他エージェント（Codex など）:** `skills/*` を各ハーネスの skills ディレクトリへコピー。
 
+> **初回:** **「マーケティングキットをセットアップして」** と言ってください — `kit-onboarding` スキルが約10分で DESIGN.md（ブランドトークン）・BRAND-VOICE.md・CLAUDE.md の基礎を整えます。
+
 ## 中身
 
 **土台づくり**
 | スキル | できること |
 |---|---|
+| **kit-onboarding** | まずここから — 全スキルが読む DESIGN.md・BRAND-VOICE.md・CLAUDE.md の基礎を設定 |
 | **publish-checklist** | デプロイ前の head 最適化 — favicon 一式、OG 1200×630、ページ別 title、canonical、コピペ用 `<head>` テンプレート |
 | **seo-geo-setup** | 検索エンジン登録（Google・Naver・Bing・Daum・Pinterest）+ **GEO**（AI検索での引用 — クローラー許可リスト、llms.txt、結論先出し構造）+ ローカルSEO |
 | **analytics-setup** | GA4 + GTM + Clarity — 必須設定3つ、コンバージョンイベント、UTMルール、オーディエンス、AI Search チャネル、コピペ用AI委任プロンプト |
@@ -100,6 +103,10 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 - お金が動く操作（広告出稿・予算変更）は明示承認が必須：プラットフォーム + 予算 + 期間
 - 外部に出る操作（送信・公開・有効化）は明示的な "go" が必須
 - タイムアウト時はまず一覧を確認、盲目的リトライ禁止 — 二重課金・二重投稿の元
+
+## 作者について
+
+**Dan Jeong** — 11年目のマーケター兼起業家、Lovable アンバサダー。現在は AI スタートアップ [Sundayable](https://www.sundayable.com) を立ち上げ、マーケティングのあらゆる工程を AI で刷新中 — このキットは彼が毎週実際に回しているツール群です。
 
 ## 謝辞
 

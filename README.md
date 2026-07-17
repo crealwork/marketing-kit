@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>25 battle-tested marketing skills you plug into your AI agent, wholesale.</b><br>
+  <b>26 battle-tested marketing skills you plug into your AI agent, wholesale.</b><br>
   SEO/GEO, analytics, ads, social automation, video editing, thumbnails, image generation, lead magnets, print design — all of it.
 </p>
 
-<p align="center"><img src="assets/demo.gif" alt="marketing-kit demo" width="640"></p>
+<p align="center"><img src="assets/demo.en.gif" alt="marketing-kit demo" width="640"></p>
 
 ---
 
@@ -33,11 +33,14 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 **Any SKILL.md-compatible agent (Codex, etc.):** copy `skills/*` into your harness's skills directory.
 
+> **First run:** say **"set up my marketing kit"** — the `kit-onboarding` skill creates your DESIGN.md (brand tokens), BRAND-VOICE.md and CLAUDE.md basics in ~10 minutes, so every skill speaks your brand from day one.
+
 ## What's inside
 
 **Groundwork**
 | Skill | What it does |
 |---|---|
+| **kit-onboarding** | Start here — sets up the DESIGN.md, BRAND-VOICE.md and CLAUDE.md basics every other skill reads |
 | **publish-checklist** | Pre-deploy head optimization — favicon set, OG 1200×630, per-page titles, canonical, copy-paste `<head>` template |
 | **seo-geo-setup** | Search engine registration (Google, Naver, Bing, Daum, Pinterest) + **GEO** (AI-search citations — crawler allowlist, llms.txt, answer-first structure) + local SEO |
 | **analytics-setup** | GA4 + GTM + Clarity — the 3 must-flip settings, conversion events, UTM rules, audiences, AI Search channel, copy-paste AI delegation prompts |
@@ -100,6 +103,10 @@ Everything via environment variables — never write keys into files.
 - Actions that spend money (ad campaigns, budget changes) need explicit approval: platform + budget + duration
 - Actions that leave the machine (sends, publishes, activations) need an explicit "go"
 - On timeouts: list first, never blind-retry — a blind retry can double-charge or double-post
+
+## About the maker
+
+**Dan Jeong** — marketer and founder, 11 years in, Lovable ambassador. Currently building [Sundayable](https://www.sundayable.com), an AI startup rebuilding every step of marketing with AI. This kit is the toolset he actually runs, every week.
 
 ## Thanks
 
