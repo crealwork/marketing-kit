@@ -1,0 +1,18 @@
+{
+  "own_domains": ["example.com"],
+  "internal_emails": [],
+  "calendar": { "source": "host" },
+  "delivery": {
+    "mode": "return",
+    "slack":    { "webhook_url_env": "CYRANO_SLACK_WEBHOOK" },
+    "telegram": { "bot_token_env": "CYRANO_TELEGRAM_TOKEN", "chat_id": "" },
+    "email":    { "to": "", "from": "", "smtp_host": "", "smtp_port": 587,
+                  "smtp_user": "", "smtp_pass_env": "CYRANO_SMTP_PASS" }
+  },
+  "research": {
+    "use_insane_search": true,
+    "depth": "standard",
+    "sections": ["profile", "company", "signals", "angles"]
+  },
+  "dedup": { "state_file": ".state/briefed.json", "window_hours": 20 }
+}

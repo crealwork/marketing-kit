@@ -1,0 +1,14 @@
+{
+  "name": "sundayable",
+  "owner": {
+    "name": "Sundayable",
+    "url": "https://www.sundayable.com"
+  },
+  "plugins": [
+    {
+      "name": "marketing-kit",
+      "source": "./",
+      "description": "10 battle-tested marketing skills: SEO groundwork, card news, slide decks, newsletters, cold email, CRM, meeting research, idea validation, viral ideas, first-principles coaching."
+    }
+  ]
+}

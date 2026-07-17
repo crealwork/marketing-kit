@@ -1,0 +1,4 @@
+﻿__pycache__/
+*.pyc
+.state/
+skills/cyrano/config.json

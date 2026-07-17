@@ -1,0 +1,13 @@
+{
+  "name": "marketing-kit",
+  "version": "1.0.0",
+  "description": "10 battle-tested marketing skills for AI agents: SEO groundwork (search engines, GA4/GTM, local SEO, Zernio ads), Instagram card news, presentation decks, MailerLite newsletters, Instantly cold email, Close CRM, pre-meeting research briefs, YC-style idea validation, viral stunt ideas, and first-principles business coaching.",
+  "author": {
+    "name": "Sundayable",
+    "url": "https://www.sundayable.com"
+  },
+  "homepage": "https://github.com/crealwork/marketing-kit",
+  "repository": "https://github.com/crealwork/marketing-kit",
+  "license": "MIT",
+  "keywords": ["marketing", "seo", "email-marketing", "cold-email", "crm", "content", "card-news", "korean", "ga4", "ads"]
+}
