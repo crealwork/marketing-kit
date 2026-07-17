@@ -1,6 +1,6 @@
 ---
 name: image-gen
-description: Use when generating marketing images or AI video clips — newsletter heroes, blog covers, ad creatives, card news backgrounds, social visuals. All generation goes through the Higgsfield CLI (default model gpt_image_2). Triggers: "이미지 만들어줘", "뉴스레터 이미지", "블로그 커버", "광고 소재 이미지", "generate an image for", "hero image", "AI 영상 클립". 유튜브 썸네일 → thumbnail-maker. 사이트/카드 UI 디자인 → 해당 제작 스킬.
+description: 'Use when generating marketing images or AI video clips — newsletter heroes, blog covers, ad creatives, card news backgrounds, social visuals. All generation goes through the Higgsfield CLI (default model gpt_image_2). Triggers: "이미지 만들어줘", "뉴스레터 이미지", "블로그 커버", "광고 소재 이미지", "generate an image for", "hero image", "AI 영상 클립". 유튜브 썸네일 → thumbnail-maker. 사이트/카드 UI 디자인 → 해당 제작 스킬.'
 ---
 
 # Image Gen

@@ -1,6 +1,6 @@
 ---
 name: humanizer
-description: Use when text needs to sound human-written — rewriting AI-generated drafts, removing AI tells from marketing copy, emails, blog posts, social posts, or newsletters, in English or Korean. Triggers: "휴머나이즈해줘", "AI티 나는 거 고쳐줘", "사람이 쓴 것처럼", "make this sound human", "this sounds like ChatGPT", "de-AI this", or before publishing any AI-drafted prose.
+description: 'Use when text needs to sound human-written — rewriting AI-generated drafts, removing AI tells from marketing copy, emails, blog posts, social posts, or newsletters, in English or Korean. Triggers: "휴머나이즈해줘", "AI티 나는 거 고쳐줘", "사람이 쓴 것처럼", "make this sound human", "this sounds like ChatGPT", "de-AI this", or before publishing any AI-drafted prose.'
 ---
 
 # Humanizer

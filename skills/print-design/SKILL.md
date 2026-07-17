@@ -1,6 +1,6 @@
 ---
 name: print-design
-description: Use when designing anything for PRINT — posters, flyers, banners, business cards, menus, signage, festival banners, brochures. Runs a user interview, designs at exact physical dimensions, then a harsh visual QA loop; only quality-passing output reaches the user. Triggers: "포스터 만들어줘", "전단지 디자인", "배너 디자인", "명함 만들어줘", "현수막", "print poster", "flyer design". FRONTIER MODEL ONLY (Claude Fable 5 class) — on a smaller model, tell the user quality will suffer and recommend switching before proceeding.
+description: 'Use when designing anything for PRINT — posters, flyers, banners, business cards, menus, signage, festival banners, brochures. Runs a user interview, designs at exact physical dimensions, then a harsh visual QA loop; only quality-passing output reaches the user. Triggers: "포스터 만들어줘", "전단지 디자인", "배너 디자인", "명함 만들어줘", "현수막", "print poster", "flyer design". FRONTIER MODEL ONLY (Claude Fable 5 class) — on a smaller model, tell the user quality will suffer and recommend switching before proceeding.'
 ---
 
 # Print Design

@@ -1,6 +1,6 @@
 ---
 name: thumbnail-maker
-description: Use when making video thumbnails — YouTube longform (1280×720), Shorts/Reels covers (1080×1920) — always as a multi-variant set for A/B testing. Image generation via the Higgsfield CLI (default model gpt_image_2). Triggers: "썸네일 만들어줘", "썸네일 뽑아줘", "유튜브 썸네일", "커버 이미지", "make thumbnails", "CTR 썸네일". 일반 마케팅 이미지는 image-gen.
+description: 'Use when making video thumbnails — YouTube longform (1280×720), Shorts/Reels covers (1080×1920) — always as a multi-variant set for A/B testing. Image generation via the Higgsfield CLI (default model gpt_image_2). Triggers: "썸네일 만들어줘", "썸네일 뽑아줘", "유튜브 썸네일", "커버 이미지", "make thumbnails", "CTR 썸네일". 일반 마케팅 이미지는 image-gen.'
 ---
 
 # Thumbnail Maker

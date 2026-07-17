@@ -1,6 +1,6 @@
 ---
 name: publish-checklist
-description: Use when publishing or deploying ANY website, landing page, or web deliverable, or when auditing head tags — favicon set, OG image/tags, per-page titles, meta description, canonical, mobile typography. Triggers: "배포 전 체크해줘", "OG 태그 넣어줘", "파비콘 만들어줘", "메타태그 최적화", "링크 공유하면 카드 안 떠", "publish checklist", "head 최적화", and automatically before any new site ships.
+description: 'Use when publishing or deploying ANY website, landing page, or web deliverable, or when auditing head tags — favicon set, OG image/tags, per-page titles, meta description, canonical, mobile typography. Triggers: "배포 전 체크해줘", "OG 태그 넣어줘", "파비콘 만들어줘", "메타태그 최적화", "링크 공유하면 카드 안 떠", "publish checklist", "head 최적화", and automatically before any new site ships.'
 ---
 
 # Publish Checklist

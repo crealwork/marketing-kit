@@ -1,6 +1,6 @@
 ---
 name: paid-ads
-description: Use when running paid ads through Zernio — boosting a published social post, creating a standalone ad campaign, managing audiences, or pulling ad analytics across Meta (FB/IG), Google, TikTok, LinkedIn, Pinterest, X. Triggers: "광고 돌려줘", "이 포스트 부스트해줘", "boost this post", "run ads", "광고 성과 보여줘", "캠페인 일시정지", "광고 예산 바꿔줘". NOT for organic posting/scheduling, and NOT for SEO (use seo-setup).
+description: 'Use when running paid ads through Zernio — boosting a published social post, creating a standalone ad campaign, managing audiences, or pulling ad analytics across Meta (FB/IG), Google, TikTok, LinkedIn, Pinterest, X. Triggers: "광고 돌려줘", "이 포스트 부스트해줘", "boost this post", "run ads", "광고 성과 보여줘", "캠페인 일시정지", "광고 예산 바꿔줘". NOT for organic posting/scheduling, and NOT for SEO (use seo-setup).'
 ---
 
 # Zernio Ads

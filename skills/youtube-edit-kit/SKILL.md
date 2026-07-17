@@ -1,6 +1,6 @@
 ---
 name: youtube-edit-kit
-description: Use when a user provides a video file (talking head, vlog, tutorial, recording — 영상, 녹화본) and wants it edited for YouTube — silence/filler cuts, burned captions, SRT, chapters — or wants vertical Shorts/Reels cut from it. Triggers: "영상 편집해줘", "쇼츠 만들어줘", "edit this video", "cut the silences", "make shorts from this", "add captions and chapters".
+description: 'Use when a user provides a video file (talking head, vlog, tutorial, recording — 영상, 녹화본) and wants it edited for YouTube — silence/filler cuts, burned captions, SRT, chapters — or wants vertical Shorts/Reels cut from it. Triggers: "영상 편집해줘", "쇼츠 만들어줘", "edit this video", "cut the silences", "make shorts from this", "add captions and chapters".'
 ---
 
 # YouTube Edit Kit

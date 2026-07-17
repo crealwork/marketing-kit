@@ -1,6 +1,6 @@
 ---
 name: e-blast-newsletter
-description: Use when sending email via Resend — transactional sends, newsletters/broadcasts to an audience, contact list management, or setting up a sending domain. Free tier covers 3,000 emails/mo. Triggers: "이메일 보내줘", "뉴스레터 발송", "Resend로 보내줘", "무료로 이메일 마케팅", "send a newsletter", "email blast", "구독자한테 보내줘". NOT for cold outreach sequences (use b2b-cold-email — cold mail from your main domain burns its reputation).
+description: 'Use when sending email via Resend — transactional sends, newsletters/broadcasts to an audience, contact list management, or setting up a sending domain. Free tier covers 3,000 emails/mo. Triggers: "이메일 보내줘", "뉴스레터 발송", "Resend로 보내줘", "무료로 이메일 마케팅", "send a newsletter", "email blast", "구독자한테 보내줘". NOT for cold outreach sequences (use b2b-cold-email — cold mail from your main domain burns its reputation).'
 ---
 
 # Resend Email

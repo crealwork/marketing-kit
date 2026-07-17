@@ -1,6 +1,6 @@
 ---
 name: ad-video
-description: Use when making a short paid-ad or promo VIDEO (15–60s) that combines motion graphics with AI-generated visuals — social video ads, launch promos, brand sizzles for Meta/TikTok/YouTube/Reels placements. Triggers: "광고 영상 만들어줘", "프로모 비디오", "이 제품 광고 영상", "make a video ad", "launch video", "30초 광고". 기존 촬영 푸티지 편집 → youtube-edit-kit/longform-to-content, 정지 이미지 광고 → image-gen.
+description: 'Use when making a short paid-ad or promo VIDEO (15–60s) that combines motion graphics with AI-generated visuals — social video ads, launch promos, brand sizzles for Meta/TikTok/YouTube/Reels placements. Triggers: "광고 영상 만들어줘", "프로모 비디오", "이 제품 광고 영상", "make a video ad", "launch video", "30초 광고". 기존 촬영 푸티지 편집 → youtube-edit-kit/longform-to-content, 정지 이미지 광고 → image-gen.'
 ---
 
 # Ad Video

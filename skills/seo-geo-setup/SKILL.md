@@ -1,6 +1,6 @@
 ---
 name: seo-geo-setup
-description: Use when registering a site with search engines (Google Search Console, Naver, Bing, Daum, Pinterest), optimizing for AI search engines / GEO (ChatGPT, Perplexity, Gemini, Copilot citations, llms.txt, AI crawler access), or setting up local SEO (Google Business Profile, Naver Place, Kakao Maps, Yelp). Triggers: "SEO 세팅", "검색엔진 등록해줘", "서치콘솔", "네이버 웹마스터", "GEO", "AI 검색에 뜨게 해줘", "챗GPT가 우리를 인용 안 해", "llms.txt", "로컬 SEO", "플레이스 최적화", "구글에 안 떠요". Head 태그/OG → publish-checklist, GA4/GTM → analytics-setup, 광고 → paid-ads.
+description: 'Use when registering a site with search engines (Google Search Console, Naver, Bing, Daum, Pinterest), optimizing for AI search engines / GEO (ChatGPT, Perplexity, Gemini, Copilot citations, llms.txt, AI crawler access), or setting up local SEO (Google Business Profile, Naver Place, Kakao Maps, Yelp). Triggers: "SEO 세팅", "검색엔진 등록해줘", "서치콘솔", "네이버 웹마스터", "GEO", "AI 검색에 뜨게 해줘", "챗GPT가 우리를 인용 안 해", "llms.txt", "로컬 SEO", "플레이스 최적화", "구글에 안 떠요". Head 태그/OG → publish-checklist, GA4/GTM → analytics-setup, 광고 → paid-ads.'
 ---
 
 # SEO / GEO Setup

@@ -1,6 +1,6 @@
 ---
 name: kit-onboarding
-description: Use FIRST after installing the AI + Marketing Kit — sets up the foundation files every other skill reads (DESIGN.md brand tokens, BRAND-VOICE.md, CLAUDE.md basics, API keys). Triggers: "온보딩 시작", "킷 세팅해줘", "마케팅 킷 시작", "set up my marketing kit", "start here", "get started". ALSO use when any kit skill needs brand tokens and finds no DESIGN.md — route here before improvising a brand.
+description: 'Use FIRST after installing the AI + Marketing Kit — sets up the foundation files every other skill reads (DESIGN.md brand tokens, BRAND-VOICE.md, CLAUDE.md basics, API keys). Triggers: "온보딩 시작", "킷 세팅해줘", "마케팅 킷 시작", "set up my marketing kit", "start here", "get started". ALSO use when any kit skill needs brand tokens and finds no DESIGN.md — route here before improvising a brand.'
 ---
 
 # Kit Onboarding

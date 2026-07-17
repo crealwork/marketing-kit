@@ -1,6 +1,6 @@
 ---
 name: crm-connect
-description: Use when connecting an AI agent to ANY CRM via its API — HubSpot, Pipedrive, Close, Attio, Salesforce, Zoho, Airtable/Notion-as-CRM, or a Korean CRM — to read/write leads, contacts, deals, notes, tasks. Triggers: "CRM 연동해줘", "우리 CRM에 연결", "리드 넣어줘", "딜 업데이트", "connect my CRM", "sync leads to CRM", or any CRM task where no dedicated skill for that CRM exists.
+description: 'Use when connecting an AI agent to ANY CRM via its API — HubSpot, Pipedrive, Close, Attio, Salesforce, Zoho, Airtable/Notion-as-CRM, or a Korean CRM — to read/write leads, contacts, deals, notes, tasks. Triggers: "CRM 연동해줘", "우리 CRM에 연결", "리드 넣어줘", "딜 업데이트", "connect my CRM", "sync leads to CRM", or any CRM task where no dedicated skill for that CRM exists.'
 ---
 
 # CRM Connect

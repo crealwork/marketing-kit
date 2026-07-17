@@ -1,6 +1,6 @@
 ---
 name: content-repurpose
-description: Use when adapting a post from one social platform to another — Threads → LinkedIn, LinkedIn → Threads, X → LinkedIn, a blog section → social posts — and optionally publishing via Zernio. Triggers: "이 스레드 글 링크드인용으로", "링크드인 글 스레드로 바꿔줘", "리퍼포즈해줘", "repurpose this post", "cross-post this", "turn this thread into a LinkedIn post". 원문 그대로 복붙 크로스포스팅에는 쓰지 않는다 — 그건 organic-social로 바로.
+description: 'Use when adapting a post from one social platform to another — Threads → LinkedIn, LinkedIn → Threads, X → LinkedIn, a blog section → social posts — and optionally publishing via Zernio. Triggers: "이 스레드 글 링크드인용으로", "링크드인 글 스레드로 바꿔줘", "리퍼포즈해줘", "repurpose this post", "cross-post this", "turn this thread into a LinkedIn post". 원문 그대로 복붙 크로스포스팅에는 쓰지 않는다 — 그건 organic-social로 바로.'
 ---
 
 # Content Repurpose

@@ -1,6 +1,6 @@
 ---
 name: lead-magnet
-description: Use when creating a lead magnet end-to-end — brainstorming the offer with the user through Q&A, building the actual deliverable (checklist, guide PDF, template, swipe file), and wiring captured leads into a Google Sheets database. Triggers: "리드마그넷 만들자", "리드 마그넷 브레인스토밍", "무료 자료 만들어서 리드 모으고 싶어", "lead magnet", "무료 가이드 만들어줘", "이메일 수집하게 자료 하나". 뉴스레터 발송 자체는 e-blast-newsletter로.
+description: 'Use when creating a lead magnet end-to-end — brainstorming the offer with the user through Q&A, building the actual deliverable (checklist, guide PDF, template, swipe file), and wiring captured leads into a Google Sheets database. Triggers: "리드마그넷 만들자", "리드 마그넷 브레인스토밍", "무료 자료 만들어서 리드 모으고 싶어", "lead magnet", "무료 가이드 만들어줘", "이메일 수집하게 자료 하나". 뉴스레터 발송 자체는 e-blast-newsletter로.'
 ---
 
 # Lead Magnet

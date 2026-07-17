@@ -1,6 +1,6 @@
 ---
 name: organic-social
-description: Use when publishing or scheduling ORGANIC social media posts via Zernio — one post to multiple platforms (YouTube, Instagram, TikTok, LinkedIn, Facebook, X, Pinterest, Threads), content calendars, media upload, or automating a posting cadence. Triggers: "이 포스트 올려줘", "스케줄해줘", "인스타랑 유튜브에 같이 올려줘", "포스팅 자동화", "content calendar", "schedule this post", "cross-post". Paid promotion → paid-ads. 발행 승인 없는 자동 게시는 금지.
+description: 'Use when publishing or scheduling ORGANIC social media posts via Zernio — one post to multiple platforms (YouTube, Instagram, TikTok, LinkedIn, Facebook, X, Pinterest, Threads), content calendars, media upload, or automating a posting cadence. Triggers: "이 포스트 올려줘", "스케줄해줘", "인스타랑 유튜브에 같이 올려줘", "포스팅 자동화", "content calendar", "schedule this post", "cross-post". Paid promotion → paid-ads. 발행 승인 없는 자동 게시는 금지.'
 ---
 
 # Zernio Social

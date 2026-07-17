@@ -1,6 +1,6 @@
 ---
 name: brand-guide
-description: Use when extracting or creating brand guidelines — from an existing website, logo, deck, or materials — into a measurable brand system (colors, typography, logo rules, voice) that agents and designers can apply. Triggers: "브랜드 가이드 뽑아줘", "브랜드 가이드라인 만들어줘", "이 사이트에서 브랜드 시스템 추출", "make a brand guide from this site", "define our brand voice", "DESIGN.md 만들어줘". Best run on a frontier model (Claude Fable 5 class) — taste calls dominate this task.
+description: 'Use when extracting or creating brand guidelines — from an existing website, logo, deck, or materials — into a measurable brand system (colors, typography, logo rules, voice) that agents and designers can apply. Triggers: "브랜드 가이드 뽑아줘", "브랜드 가이드라인 만들어줘", "이 사이트에서 브랜드 시스템 추출", "make a brand guide from this site", "define our brand voice", "DESIGN.md 만들어줘". Best run on a frontier model (Claude Fable 5 class) — taste calls dominate this task.'
 ---
 
 # Brand Guide
