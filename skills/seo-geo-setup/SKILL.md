@@ -56,4 +56,4 @@ AI Search 채널 포함) → 필요 시 광고(zernio-ads).
 
 ## Thanks
 
-AIMS의 무료 가이드 (Growth Playbook 2026, [aim-squad.com](https://aim-squad.com))에서 많이 배웠다 — 고맙습니다. 일부 팁의 원 출처: threads @avcd.eee (GSC 등록 방식, GBP 리뷰), @place_joe (Naver Place 키워드).
+**AIMS** ([aim-squad.com](https://aim-squad.com)) 옆에서 많이 배우고 있습니다 — 고맙습니다.
