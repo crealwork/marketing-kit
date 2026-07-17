@@ -124,3 +124,7 @@ python -m engine deliver --brief brief.txt \
 ## 프라이버시
 
 `DISCLAIMER.md` 참조 — 공개 정보·비즈니스 목적 한정, 환각 금지가 이 스킬의 계약이다.
+
+## Credits
+
+cyrano는 GPTAKU님의 **insane-search**를 포크해서 만들었습니다 — 리서치 엔진의 뼈대가 그분 작업입니다. 감사합니다.

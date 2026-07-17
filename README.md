@@ -100,11 +100,13 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 - **외부로 나가는 액션**(메일 발송, 캠페인 활성화, 발행)은 유저의 명시적 "go" 필수
 - 타임아웃 시 블라인드 재시도 금지 — 목록 조회로 중복 여부 먼저 확인
 
-## 크레딧
+## 크레딧 & 감사
 
-- seo-setup의 체크리스트 뼈대: AIMS "AI 시대, 혼자서도 끝내는 마케팅 실전 세팅" (Growth
-  Playbook 2026, [aim-squad.com](https://aim-squad.com)); 일부 팁 원 출처 threads
-  @avcd.eee, @place_joe. Zernio Ads API는 zernio.com 공개 문서 기준.
+- **AIMS** ([aim-squad.com](https://aim-squad.com)) — seo-geo-setup과 analytics-setup을 만들며
+  AIMS의 무료 Growth Playbook에서 많이 배웠습니다. 고맙습니다. 일부 팁의 원 출처:
+  threads @avcd.eee, @place_joe.
+- **cyrano**는 GPTAKU님의 **insane-search**를 포크해서 만들었습니다. 감사합니다.
+- Zernio·Resend API 내용은 각 공개 문서 기준.
 - card-news-generator의 프리셋은 실제 운영 브랜드의 worked example — 본인 브랜드로 교체해서 쓰세요.
 
 ## License

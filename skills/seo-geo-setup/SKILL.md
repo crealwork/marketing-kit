@@ -54,6 +54,6 @@ AI Search 채널 포함) → 필요 시 광고(zernio-ads).
 | GA4/GTM/Clarity 측정 + AI Search 채널 | `analytics-setup` 스킬 |
 | 유료 광고 집행 | `zernio-ads` 스킬 |
 
-## Credits
+## Thanks
 
-체크리스트의 뼈대 일부는 AIMS의 무료 가이드 "AI 시대, 혼자서도 끝내는 마케팅 실전 세팅" (Growth Playbook 2026, [aim-squad.com](https://aim-squad.com))을 기반으로 재구성했다. 일부 팁의 원 출처: threads @avcd.eee (GSC 등록 방식, GBP 리뷰), @place_joe (Naver Place 키워드).
+AIMS의 무료 가이드 (Growth Playbook 2026, [aim-squad.com](https://aim-squad.com))에서 많이 배웠다 — 고맙습니다. 일부 팁의 원 출처: threads @avcd.eee (GSC 등록 방식, GBP 리뷰), @place_joe (Naver Place 키워드).
