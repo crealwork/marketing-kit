@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <b>24 battle-tested marketing skills you plug into your AI agent, wholesale.</b><br>
+  <b>25 battle-tested marketing skills you plug into your AI agent, wholesale.</b><br>
   SEO/GEO, analytics, ads, social automation, video editing, thumbnails, image generation, lead magnets, print design — all of it.
 </p>
 
@@ -60,6 +60,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **youtube-edit-kit** | Basic YouTube editing — silence/filler cuts, AI-reviewed captions, SRT/chapters, vertical Shorts/Reels. Free and local (ffmpeg + faster-whisper) |
 | **longform-to-content** | One long recording → full edit + 4–8 Shorts + CTR thumbnails + scheduled publishing |
+| **ad-video** | Short ad/promo videos (15–60s) — motion graphics + AI visuals via HyperFrames, A/B variants mandatory |
 
 **Publishing · Ads · Leads**
 | Skill | What it does |

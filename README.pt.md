@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <b>24 habilidades de marketing testadas em batalha, prontas para plugar no seu agente de IA.</b><br>
+  <b>25 habilidades de marketing testadas em batalha, prontas para plugar no seu agente de IA.</b><br>
   SEO/GEO, analytics, anúncios, automação social, edição de vídeo, thumbnails, geração de imagens, iscas digitais, design gráfico — tudo.
 </p>
 
@@ -60,6 +60,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **youtube-edit-kit** | Edição básica de YouTube — cortes de silêncio/vícios de fala, legendas revisadas por IA, SRT/capítulos, Shorts/Reels verticais. Grátis e local |
 | **longform-to-content** | Uma gravação longa → edição completa + 4–8 Shorts + thumbnails de CTR + publicação agendada |
+| **ad-video** | Vídeos de anúncio/promo (15–60s) — motion graphics + visuais de IA (HyperFrames), variações A/B obrigatórias |
 
 **Publicação · Anúncios · Leads**
 | Skill | O que faz |

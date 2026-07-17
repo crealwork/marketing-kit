@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <b>実戦で鍛えた24のマーケティングスキルを、AIエージェントに丸ごと組み込む。</b><br>
+  <b>実戦で鍛えた25のマーケティングスキルを、AIエージェントに丸ごと組み込む。</b><br>
   SEO/GEO、計測、広告、SNS自動化、動画編集、サムネイル、画像生成、リードマグネット、印刷デザインまで全部。
 </p>
 
@@ -60,6 +60,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **youtube-edit-kit** | YouTube基本編集 — 無音/フィラーカット、AI校閲字幕、SRT/チャプター、縦型Shorts/Reels。無料・ローカル動作 |
 | **longform-to-content** | 長尺録画1本 → フル編集 + Shorts 4–8本 + CTRサムネイル + 予約公開 |
+| **ad-video** | 広告/プロモ動画（15–60秒）— モーショングラフィックス + AI ビジュアル（HyperFrames）、A/B バリアント必須 |
 
 **配信 · 広告 · リード**
 | スキル | できること |

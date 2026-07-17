@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <b>24 个经过实战检验的营销技能，一次性装进你的 AI 智能体。</b><br>
+  <b>25 个经过实战检验的营销技能，一次性装进你的 AI 智能体。</b><br>
   SEO/GEO、数据分析、广告、社媒自动化、视频剪辑、缩略图、图像生成、引流磁铁、印刷设计 — 全都有。
 </p>
 
@@ -60,6 +60,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **youtube-edit-kit** | 基础 YouTube 剪辑 — 静音/填充词剪切、AI 校审字幕、SRT/章节、竖版 Shorts/Reels（免费本地运行） |
 | **longform-to-content** | 一段长录像 → 完整剪辑 + 4–8 条 Shorts + CTR 缩略图 + 定时发布 |
+| **ad-video** | 短广告/宣传视频（15–60秒）— 动效 + AI 视觉（HyperFrames），必须 A/B 变体 |
 
 **发布 · 广告 · 线索**
 | 技能 | 功能 |
