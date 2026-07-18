@@ -40,6 +40,37 @@ silently); resize output → 1280x720; thumbnail file must be < 2MB for YouTube
 (convert to JPEG q90 if over).
 Cutouts (if compositing instead): local `rembg` with `birefnet-portrait`.
 
+### Preferred workflow — BAKE the text, then verify (real people = cutout references)
+
+**Default: let gpt_image_2 bake the whole thumbnail in one shot — faces + logos + the
+hook TEXT** (incl. highlight boxes, quotes, callout bubbles). It renders CJK/Korean text
+accurately in practice. Prompt the exact text: `...a two-line title, first line reads
+exactly "…" in <color>, second …` + "render every character EXACTLY".
+- **VERIFY every output char-for-char** (SELF-TESTS below). Regenerate garbled lines with
+  the SAME model (shorten/simplify). Non-negotiable.
+- **Real people you have photos of → use rembg CUTOUTS as the reference (still full one-shot
+  gen).** rembg birefnet-portrait each photo (kill any burned subtitle/caption strip first:
+  alpha=0 below it, then crop to the alpha bbox), collage the clean cutouts on white as ONE
+  `--image` reference, and let gpt_image_2 generate the whole thumbnail (scene + baked text +
+  logos) preserving the EXACT faces. Keeps the person's real current look AND a cohesive AI
+  render. Do NOT PIL-composite cutouts onto gradients.
+- **PIL overlay is the LAST fallback** (only if a line keeps garbling): text-free scene + PIL
+  hook (heavy-stroke bold). Scrims MUST be directional gradients that fade to transparent,
+  never hard rectangles (a rectangle seams across the faces).
+
+**Two families, not one look:** (1) dramatic / high-CTR (neon, shocked faces) AND (2) one
+that MATCHES THE TARGET CHANNEL'S OWN FEED — always study the channel's real thumbnails first
+and copy their grammar (e.g. a warm podcast-desk 2-shot + yellow/red highlight boxes +
+callout bubbles, not neon).
+
+**Two+ people:** combine each person's photo/cutout into ONE side-by-side reference; name
+LEFT/RIGHT and "preserve exact faces". Wardrobe/hair fix: edit the reference photo first
+(`gpt_image_2 --image`, "keep exact face, change ONLY the hair to <style>").
+
+**Higgsfield JSON parse:** the CLI prints pretty-printed JSON; `json.loads` the whole stdout,
+walk it recursively for image urls, drop the input-reference host — the remaining url is the
+result. Download with `urllib.request.urlretrieve`.
+
 ## SELF-TESTS (all mandatory)
 
 1. READ the output: generated text matches character-for-character. Any wrong glyph
